@@ -5,10 +5,10 @@
 //  Created by Himanshu Kesharwani on 07/06/23.
 //
 
-import Foundation
+import UIKit
 
 struct UIConstants {
     
-    static var screenWidth : CGFloat? = 100 //AppDelegate.sharedDelegate().window?.frame.width
-    static var screenHeight : CGFloat? = 190 //AppDelegate.sharedDelegate().window?.frame.height
+    static let screenHeight = UIScreen.main.bounds.height
+    static let screenWidth = UIScreen.main.bounds.width
 }
