@@ -84,6 +84,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4948F09E2A330C89006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4948F0A02A330C94006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		495C81F32A31C11C00415440 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
 		495C81F42A31C11C00415440 /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
 		495C81F52A31C11C00415440 /* NavigationBarButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonStyle.swift; sourceTree = "<group>"; };
@@ -173,6 +175,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4948F09B2A330C1D006D2498 /* GoogleServicesSetup */ = {
+			isa = PBXGroup;
+			children = (
+				4948F09D2A330C47006D2498 /* Development */,
+				4948F09C2A330C40006D2498 /* Production */,
+			);
+			path = GoogleServicesSetup;
+			sourceTree = "<group>";
+		};
+		4948F09C2A330C40006D2498 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				4948F0A02A330C94006D2498 /* GoogleService-Info.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		4948F09D2A330C47006D2498 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				4948F09E2A330C89006D2498 /* GoogleService-Info.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
 		495C81F22A31C11C00415440 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,6 +593,7 @@
 		49F0EE642A2F54D10091391C /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				4948F09B2A330C1D006D2498 /* GoogleServicesSetup */,
 				495C821F2A31E29A00415440 /* Localization */,
 				49A8DB342A30AEA000D7E1D6 /* ReusableComponents */,
 				49A8DB312A30AE2900D7E1D6 /* Extensions */,
@@ -600,6 +628,7 @@
 				49F0EE5E2A2F54D10091391C /* Sources */,
 				49F0EE5F2A2F54D10091391C /* Frameworks */,
 				49F0EE602A2F54D10091391C /* Resources */,
+				4948F09A2A330B79006D2498 /* Firebase Setup Run Script */,
 			);
 			buildRules = (
 			);
@@ -668,6 +697,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4948F09A2A330B79006D2498 /* Firebase Setup Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Setup Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource to copy\nDEBUG_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\nPROD_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\n\n# Get references to debug and release versions of the plist file\nPROD_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Production/${PROD_INFO_PLIST_FILE_NAME}\nDEBUG_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Development/${DEBUG_INFO_PLIST_FILE_NAME}\n\n# Make sure the release version exists\necho \"Looking for ${PROD_INFO_PLIST_FILE_NAME} in ${PROD_INFO_PLIST_FILE}\"\nif [ ! -f $PROD_INFO_PLIST_FILE ] ; then\n    echo \"File Production GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Make sure the debug version exists\necho \"Looking for ${DEBUG_INFO_PLIST_FILE_NAME} in ${DEBUG_INFO_PLIST_FILE}\"\nif [ ! -f $DEBUG_INFO_PLIST_FILE ] ; then\n    echo \"File Debug GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the plist file\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying ${INFO_PLIST_FILE} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy the appropiate file to app bundle\nif [ \"${CONFIGURATION}\" == \"Release\" ] ; then\n    echo \"Config was: Release\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Debug\" ] ; then\n    echo \"Config was: Debug\"\n    echo \"File ${DEBUG_INFO_PLIST_FILE} copied\"\n    cp \"${DEBUG_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Config was: ${CONFIGURATION}\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49F0EE5E2A2F54D10091391C /* Sources */ = {
