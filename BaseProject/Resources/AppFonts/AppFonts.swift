@@ -20,9 +20,9 @@ extension Font {
         case .bold:
             return "Bold"
         case .light:
-            return "light"
+            return "Light"
         case .extrabold:
-            return "extrabold"
+            return "Extrabold"
         }
     }
     

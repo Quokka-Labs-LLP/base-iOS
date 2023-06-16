@@ -18,7 +18,7 @@ struct RoundedRectangleButtonStyle: ButtonStyle {
         configuration.label
             .frame(width: width, height: height)
             .font(font)
-            .foregroundColor(AppColor.white_FFFFFF.value)
+            .foregroundColor(AppColor.primaryAppColor.value)
             .background(
                 RoundedRectangle(cornerRadius: 3, style: .continuous)
                     .foregroundColor(backgroundColor)

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+/*
+ MARK: Class use to delcare all request/response models & other models needed.
+ */
+struct LoginResoneModel {
+    var name: String?
+    var userId: String?
+    
+}

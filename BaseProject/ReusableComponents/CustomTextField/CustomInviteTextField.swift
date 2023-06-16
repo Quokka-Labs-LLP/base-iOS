@@ -28,7 +28,7 @@ struct CustomInviteTextField: View {
         .padding(EdgeInsets(top: 8, leading: 10, bottom: 8, trailing: 6))
         .overlay(
             RoundedRectangle(cornerRadius: 8)
-                .stroke(isErrorBorder ? AppColor.red_CA3832.value : AppColor.gray_E5E5E5.value, lineWidth: 1)
+                .stroke(isErrorBorder ? AppColor.red.value : AppColor.gray.value, lineWidth: 1)
         )
     }
 }

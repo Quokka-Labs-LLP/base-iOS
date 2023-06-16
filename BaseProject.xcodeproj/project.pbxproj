@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4925933A2A3C3BE4002F2937 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492593392A3C3BE4002F2937 /* Int+Extension.swift */; };
 		495C820B2A31C11C00415440 /* RoundedRectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C81F32A31C11C00415440 /* RoundedRectangleButtonStyle.swift */; };
 		495C820C2A31C11C00415440 /* CapsuleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C81F42A31C11C00415440 /* CapsuleButtonStyle.swift */; };
 		495C820D2A31C11C00415440 /* NavigationBarButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C81F52A31C11C00415440 /* NavigationBarButtonStyle.swift */; };
@@ -52,8 +53,6 @@
 		49A8DAE42A30A02000D7E1D6 /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAE32A30A02000D7E1D6 /* NetworkWrapper.swift */; };
 		49A8DAE62A30A6D800D7E1D6 /* EnviornmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAE52A30A6D800D7E1D6 /* EnviornmentConfiguration.swift */; };
 		49A8DAE82A30A6F900D7E1D6 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAE72A30A6F900D7E1D6 /* ErrorHandler.swift */; };
-		49A8DAFD2A30A80500D7E1D6 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAEB2A30A80400D7E1D6 /* DateHelper.swift */; };
-		49A8DAFE2A30A80500D7E1D6 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAED2A30A80400D7E1D6 /* FormValidator.swift */; };
 		49A8DAFF2A30A80500D7E1D6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAEF2A30A80400D7E1D6 /* AlertManager.swift */; };
 		49A8DB002A30A80500D7E1D6 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAF02A30A80400D7E1D6 /* AlertView.swift */; };
 		49A8DB022A30A80500D7E1D6 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DAF32A30A80500D7E1D6 /* HelperMethods.swift */; };
@@ -84,6 +83,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492593392A3C3BE4002F2937 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4948F09E2A330C89006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4948F0A02A330C94006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		495C81F32A31C11C00415440 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 		49A8DAE32A30A02000D7E1D6 /* NetworkWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
 		49A8DAE52A30A6D800D7E1D6 /* EnviornmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviornmentConfiguration.swift; sourceTree = "<group>"; };
 		49A8DAE72A30A6F900D7E1D6 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		49A8DAEB2A30A80400D7E1D6 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		49A8DAED2A30A80400D7E1D6 /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		49A8DAEF2A30A80400D7E1D6 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		49A8DAF02A30A80400D7E1D6 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		49A8DAF32A30A80500D7E1D6 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
@@ -384,30 +382,12 @@
 				49A8DB382A30B18800D7E1D6 /* Toast */,
 				49A8DAF62A30A80500D7E1D6 /* ActivityIndicator */,
 				49A8DAEE2A30A80400D7E1D6 /* Alerts */,
-				49A8DAEA2A30A80400D7E1D6 /* DateHelper */,
 				49A8DAF42A30A80500D7E1D6 /* DebugLogger */,
-				49A8DAEC2A30A80400D7E1D6 /* FormValidator */,
 				49A8DAF92A30A80500D7E1D6 /* HapticsGenerator */,
 				49A8DAF22A30A80400D7E1D6 /* HelperMethods */,
 				49A8DAFB2A30A80500D7E1D6 /* MediaHandler */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		49A8DAEA2A30A80400D7E1D6 /* DateHelper */ = {
-			isa = PBXGroup;
-			children = (
-				49A8DAEB2A30A80400D7E1D6 /* DateHelper.swift */,
-			);
-			path = DateHelper;
-			sourceTree = "<group>";
-		};
-		49A8DAEC2A30A80400D7E1D6 /* FormValidator */ = {
-			isa = PBXGroup;
-			children = (
-				49A8DAED2A30A80400D7E1D6 /* FormValidator.swift */,
-			);
-			path = FormValidator;
 			sourceTree = "<group>";
 		};
 		49A8DAEE2A30A80400D7E1D6 /* Alerts */ = {
@@ -497,6 +477,7 @@
 		49A8DB252A30AC8400D7E1D6 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				49A8DADA2A309C8C00D7E1D6 /* UserSession */,
 				49A8DB292A30ACE900D7E1D6 /* CoreData */,
 				49A8DB262A30AC9000D7E1D6 /* UserDefaults */,
 			);
@@ -545,6 +526,7 @@
 				495C82272A31E7C100415440 /* Date+Extension.swift */,
 				495C82292A31E7F900415440 /* String+Extension.swift */,
 				495C822B2A31E8FC00415440 /* View+Extension.swift */,
+				492593392A3C3BE4002F2937 /* Int+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -603,7 +585,6 @@
 				49A8DAE92A30A73D00D7E1D6 /* Utilities */,
 				49A8DAE02A309F5100D7E1D6 /* NetworkHandler */,
 				49A8DADF2A309E0500D7E1D6 /* Application */,
-				49A8DADA2A309C8C00D7E1D6 /* UserSession */,
 				49A8DAD52A309AAE00D7E1D6 /* Constants */,
 				49F0EE6B2A2F54D90091391C /* Preview Content */,
 			);
@@ -725,8 +706,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				495C82182A31C11C00415440 /* CustomLabel.swift in Sources */,
+				4925933A2A3C3BE4002F2937 /* Int+Extension.swift in Sources */,
 				495C823D2A31F1B100415440 /* HTTPRequestBody.swift in Sources */,
-				49A8DAFE2A30A80500D7E1D6 /* FormValidator.swift in Sources */,
 				49A8DAD92A309B1100D7E1D6 /* StringConstants.swift in Sources */,
 				49A8DB022A30A80500D7E1D6 /* HelperMethods.swift in Sources */,
 				49A8DB372A30B03D00D7E1D6 /* LoaderView.swift in Sources */,
@@ -779,7 +760,6 @@
 				49A8DAD72A309AD100D7E1D6 /* UIConstants.swift in Sources */,
 				49A8DB282A30ACE100D7E1D6 /* UserDefaultManager.swift in Sources */,
 				49A8DB0C2A30A8CD00D7E1D6 /* AppColors.swift in Sources */,
-				49A8DAFD2A30A80500D7E1D6 /* DateHelper.swift in Sources */,
 				495C823F2A31F1B100415440 /* ContentType.swift in Sources */,
 				49A8DADE2A309CAD00D7E1D6 /* UserSessionKeys.swift in Sources */,
 				495C82442A31F1B100415440 /* URLSessionFactory.swift in Sources */,

@@ -19,7 +19,7 @@ struct CapsuleButtonStyle: ButtonStyle {
         configuration.label
             .frame(width: width, height: height)
             .font(font)
-            .foregroundColor(AppColor.white_FFFFFF.value)
+            .foregroundColor(AppColor.primaryAppColor.value)
             .background(
                 Capsule()
                     .fill(backgroundColor)

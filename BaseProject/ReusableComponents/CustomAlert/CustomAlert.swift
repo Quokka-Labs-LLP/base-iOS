@@ -38,7 +38,7 @@ struct VlCustomAlert: View {
                 CustomLabel(title: title ?? "",
                             fontSize: 16,
                             weight: .medium,
-                            titleColor: AppColor.white_FFFFFF.value).padding(.leading, 15)
+                            titleColor: AppColor.white.value).padding(.leading, 15)
                 Spacer()
             }.frame(width: UIConstants.screenWidth * 0.85, height: 50).background(AppColor.primaryAppColor.value)
             
@@ -68,7 +68,7 @@ struct VlCustomAlert: View {
                     CustomLabel(title: actionBtnTitle,
                                 fontSize: 14,
                                 weight: .medium,
-                                titleColor: AppColor.white_FFFFFF.value)
+                                titleColor: AppColor.white.value)
                     .frame(height: 40).padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                     .background(Rectangle().fill(AppColor.primaryAppColor.value).cornerRadius(15))
                    

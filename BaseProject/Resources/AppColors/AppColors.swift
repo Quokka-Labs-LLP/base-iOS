@@ -7,29 +7,22 @@
 
 import SwiftUI
 
-/// Contains all the custom colors used in application
+//MARK: This enum is used as a common place to maintain all colors used in App.
+
+/*
+ STEPS To use:
+ 1: Add color to AppColors Asset.
+ 2: Declare a new case in 'AppColor' enum.
+ 3: Use color where you want to use.
+ */
+
 public enum AppColor {
     case primaryAppColor
-    case gray_5C5B5C
-    case gray_494848
-    case white_FFFFFF
-    case black_000000
-    case fontBlack_333333
-    case red_CA3832
-    case gray_E5E5E5
-    case gray_757575
-    case darkGunmetal_192532
-    case gray_92918D
-    case green_66DB85
-    case yellow_F6CA4F
+    case black
+    case gray
     case violet
-    case gray_ECEFF0
-    case progressBarBase
-    case progressBarTop
-    case fontGray_969696
-    case gray_F2F4F5
-    case SkipBackground_E3E5E7
-    case SkipBorder_5C5B5C
+    case red
+    case white
     
     func withOpacity(_ opacity: Double) -> Color {
         return self.value.opacity(opacity)
@@ -39,46 +32,16 @@ public enum AppColor {
         switch self {
         case .primaryAppColor:
             return Color("PrimaryAppColor")
-        case .gray_494848:
-            return Color("Gray_494848")
-        case .gray_5C5B5C:
-            return Color("Gray_5C5B5C")
-        case .white_FFFFFF:
-            return Color("White_FFFFFF")
-        case .black_000000:
-            return Color("Black")
-        case .fontBlack_333333:
-            return Color("fontBlack_333333")
-        case .red_CA3832:
-            return Color("Red_CA3832")
-        case .gray_E5E5E5:
-            return Color("Gray_E5E5E5")
-        case .gray_757575:
-            return Color("Gray_757575")
-        case .darkGunmetal_192532:
-            return Color("DarkGunmetal_192532")
-        case .gray_92918D:
-            return Color("Gray_92918D")
-        case .green_66DB85:
-            return Color("Green_66DB85")
-        case .yellow_F6CA4F:
-            return Color("Yellow_F6CA4F")
-        case .gray_ECEFF0:
-            return Color("Gray_ECEFF0")
         case .violet:
             return Color("Violet")
-        case .progressBarBase:
-            return Color("ProgressBarBase")
-        case .progressBarTop:
-            return Color("ProgressBarTop")
-        case .fontGray_969696:
-            return Color("fontGray_969696")
-        case .gray_F2F4F5:
-            return Color("Gray_F2F4F5")
-        case .SkipBackground_E3E5E7:
-            return Color("SkipBackground_E3E5E7")
-        case .SkipBorder_5C5B5C:
-            return Color("SkipBorder_5C5B5C")
+        case .black:
+            return Color("Black")
+        case .gray:
+            return Color("Gray")
+        case .red:
+            return Color("Red")
+        case .white:
+            return Color("White")
         }
     }
 }
