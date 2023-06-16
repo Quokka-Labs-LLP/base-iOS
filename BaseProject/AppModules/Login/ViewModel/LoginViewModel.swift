@@ -16,11 +16,36 @@ import SwiftUI
  class LoginViewModel: ObservableObject {
      @Published var data: DataModel?
  
-     //API Call function
-     func getDataFromServer() {
-        Code here....
+ 
+     func fetchData() {
+         networkHandler.getData { result in
+             DispatchQueue.main.async {
+                 switch result {
+                 case .success(let data):
+                     self.data = data
+                 case .failure(let error):
+                     // Handle the error case, e.g., show an error message
+                     print("Error: \(error.localizedDescription)")
+                 }
+             }
+         }
      }
      
+     func saveData(data: DataModel) {
+        networkHandler.saveData(data: data) { result in
+             DispatchQueue.main.async {
+                 switch result {
+                 case .success:
+                     // Data saved successfully, perform any additional actions if needed
+                     break
+                 case .failure(let error):
+                     // Handle the error case, e.g., show an error message
+                     print("Error: \(error.localizedDescription)")
+                 }
+             }
+         }
+     }
+
      //View Logic
      func updateLoginView() {
         Code here...
