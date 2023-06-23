@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
-
+import NetworkEye
 @main
 struct BaseProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView().onAppear{
+                    NEHTTPEye.setEnabled(true)
+                }
+            }
+
         }
     }
 }

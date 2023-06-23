@@ -80,9 +80,14 @@
 		49F0EE682A2F54D10091391C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0EE672A2F54D10091391C /* ContentView.swift */; };
 		49F0EE6A2A2F54D90091391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EE692A2F54D90091391C /* Assets.xcassets */; };
 		49F0EE6D2A2F54D90091391C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EE6C2A2F54D90091391C /* Preview Assets.xcassets */; };
+		682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */; };
+		A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935B2A45B46C00A4601C /* ProfileView.swift */; };
+		A30E935E2A45B9E300A4601C /* ApiLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935D2A45B9E300A4601C /* ApiLogsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0738FB3CC6D6F4A9856832F0 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492593392A3C3BE4002F2937 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4948F09E2A330C89006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4948F0A02A330C94006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -159,6 +164,9 @@
 		49F0EE672A2F54D10091391C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49F0EE692A2F54D90091391C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F0EE6C2A2F54D90091391C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		A30E935B2A45B46C00A4601C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A30E935D2A45B9E300A4601C /* ApiLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495C821C2A31DEA200415440 /* Lottie in Frameworks */,
+				682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +366,6 @@
 			children = (
 				495C822F2A31EE8400415440 /* Info.plist */,
 				49F0EE652A2F54D10091391C /* BaseProjectApp.swift */,
-				49F0EE672A2F54D10091391C /* ContentView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -561,6 +569,8 @@
 			children = (
 				49F0EE642A2F54D10091391C /* BaseProject */,
 				49F0EE632A2F54D10091391C /* Products */,
+				E74A46997A6BB8DBE4CD37DF /* Pods */,
+				81966791B1B6CAF8AE818F4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -575,6 +585,7 @@
 		49F0EE642A2F54D10091391C /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				A30E935A2A45B43600A4601C /* View */,
 				4948F09B2A330C1D006D2498 /* GoogleServicesSetup */,
 				495C821F2A31E29A00415440 /* Localization */,
 				49A8DB342A30AEA000D7E1D6 /* ReusableComponents */,
@@ -599,6 +610,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		81966791B1B6CAF8AE818F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A30E935A2A45B43600A4601C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49F0EE672A2F54D10091391C /* ContentView.swift */,
+				A30E935B2A45B46C00A4601C /* ProfileView.swift */,
+				A30E935D2A45B9E300A4601C /* ApiLogsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E74A46997A6BB8DBE4CD37DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0738FB3CC6D6F4A9856832F0 /* Pods-BaseProject.debug.xcconfig */,
+				5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,10 +645,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49F0EE702A2F54D90091391C /* Build configuration list for PBXNativeTarget "BaseProject" */;
 			buildPhases = (
+				BB86B86FE87B0A7BBFF41278 /* [CP] Check Pods Manifest.lock */,
 				49F0EE5E2A2F54D10091391C /* Sources */,
 				49F0EE5F2A2F54D10091391C /* Frameworks */,
 				49F0EE602A2F54D10091391C /* Resources */,
 				4948F09A2A330B79006D2498 /* Firebase Setup Run Script */,
+				D3B492196BB0273F5A306D06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -648,7 +689,7 @@
 			);
 			mainGroup = 49F0EE592A2F54D00091391C;
 			packageReferences = (
-				495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */,
 			);
 			productRefGroup = 49F0EE632A2F54D10091391C /* Products */;
 			projectDirPath = "";
@@ -698,6 +739,45 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource to copy\nDEBUG_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\nPROD_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\n\n# Get references to debug and release versions of the plist file\nPROD_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Production/${PROD_INFO_PLIST_FILE_NAME}\nDEBUG_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Development/${DEBUG_INFO_PLIST_FILE_NAME}\n\n# Make sure the release version exists\necho \"Looking for ${PROD_INFO_PLIST_FILE_NAME} in ${PROD_INFO_PLIST_FILE}\"\nif [ ! -f $PROD_INFO_PLIST_FILE ] ; then\n    echo \"File Production GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Make sure the debug version exists\necho \"Looking for ${DEBUG_INFO_PLIST_FILE_NAME} in ${DEBUG_INFO_PLIST_FILE}\"\nif [ ! -f $DEBUG_INFO_PLIST_FILE ] ; then\n    echo \"File Debug GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the plist file\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying ${INFO_PLIST_FILE} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy the appropiate file to app bundle\nif [ \"${CONFIGURATION}\" == \"Release\" ] ; then\n    echo \"Config was: Release\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Debug\" ] ; then\n    echo \"Config was: Debug\"\n    echo \"File ${DEBUG_INFO_PLIST_FILE} copied\"\n    cp \"${DEBUG_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Config was: ${CONFIGURATION}\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nfi\n";
 		};
+		BB86B86FE87B0A7BBFF41278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B492196BB0273F5A306D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseProject/Pods-BaseProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseProject/Pods-BaseProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseProject/Pods-BaseProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -724,6 +804,7 @@
 				49A8DB332A30AE5300D7E1D6 /* NSObject+Extension.swift in Sources */,
 				495C821E2A31DF6700415440 /* FontWeight.swift in Sources */,
 				49A8DAE62A30A6D800D7E1D6 /* EnviornmentConfiguration.swift in Sources */,
+				A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */,
 				49A8DB302A30AD5F00D7E1D6 /* LoginView.swift in Sources */,
 				49A8DB052A30A80500D7E1D6 /* ActivityView.swift in Sources */,
 				495C820D2A31C11C00415440 /* NavigationBarButtonStyle.swift in Sources */,
@@ -758,6 +839,7 @@
 				49A8DAE82A30A6F900D7E1D6 /* ErrorHandler.swift in Sources */,
 				495C822A2A31E7F900415440 /* String+Extension.swift in Sources */,
 				49A8DAD72A309AD100D7E1D6 /* UIConstants.swift in Sources */,
+				A30E935E2A45B9E300A4601C /* ApiLogsView.swift in Sources */,
 				49A8DB282A30ACE100D7E1D6 /* UserDefaultManager.swift in Sources */,
 				49A8DB0C2A30A8CD00D7E1D6 /* AppColors.swift in Sources */,
 				495C823F2A31F1B100415440 /* ContentType.swift in Sources */,
@@ -900,13 +982,15 @@
 		};
 		49F0EE712A2F54D90091391C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0738FB3CC6D6F4A9856832F0 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BaseProject/Preview Content\"";
-				DEVELOPMENT_TEAM = PNQ3TRY585;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseProject/Application/Info.plist;
@@ -915,6 +999,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -922,6 +1007,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.baseproject.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -930,13 +1016,15 @@
 		};
 		49F0EE722A2F54D90091391C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BaseProject/Preview Content\"";
-				DEVELOPMENT_TEAM = PNQ3TRY585;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseProject/Application/Info.plist;
@@ -945,6 +1033,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -952,6 +1041,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.baseproject.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -982,7 +1072,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+		495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
@@ -995,7 +1085,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		495C821B2A31DEA200415440 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			package = 495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
