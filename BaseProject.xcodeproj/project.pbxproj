@@ -84,6 +84,7 @@
 		A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935B2A45B46C00A4601C /* ProfileView.swift */; };
 		A30E935E2A45B9E300A4601C /* ApiLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935D2A45B9E300A4601C /* ApiLogsView.swift */; };
 		A33855062A494E89005A0A9E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33855052A494E89005A0A9E /* UserListViewModel.swift */; };
+		A3BC72F52A496E4500053904 /* UserListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC72F42A496E4500053904 /* UserListModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +170,7 @@
 		A30E935B2A45B46C00A4601C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A30E935D2A45B9E300A4601C /* ApiLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogsView.swift; sourceTree = "<group>"; };
 		A33855052A494E89005A0A9E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		A3BC72F42A496E4500053904 /* UserListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -587,6 +589,7 @@
 		49F0EE642A2F54D10091391C /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				A3BC72F32A496E2700053904 /* Model */,
 				A33855072A494E99005A0A9E /* ViewModel */,
 				A30E935A2A45B43600A4601C /* View */,
 				4948F09B2A330C1D006D2498 /* GoogleServicesSetup */,
@@ -637,6 +640,14 @@
 				A33855052A494E89005A0A9E /* UserListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3BC72F32A496E2700053904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3BC72F42A496E4500053904 /* UserListModal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E74A46997A6BB8DBE4CD37DF /* Pods */ = {
@@ -857,6 +868,7 @@
 				49A8DADE2A309CAD00D7E1D6 /* UserSessionKeys.swift in Sources */,
 				495C82442A31F1B100415440 /* URLSessionFactory.swift in Sources */,
 				495C820E2A31C11C00415440 /* ButtonWithBorderStyle.swift in Sources */,
+				A3BC72F52A496E4500053904 /* UserListModal.swift in Sources */,
 				495C82482A31F21900415440 /* GeneralNetworkModel.swift in Sources */,
 				495C82102A31C11C00415440 /* CustomAlert.swift in Sources */,
 				495C824E2A31FF7E00415440 /* LoginViewModel.swift in Sources */,

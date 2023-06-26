@@ -18,38 +18,6 @@
             endingLineNumber = "145"
             landmarkName = "-alertView:clickedButtonAtIndex:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8B2C7BD-E647-4CF6-8337-5A0B76727FF1 - 7f353a8969ea2140"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NEHTTPEyeSettingsViewController alertView:clickedButtonAtIndex:]"
-                  moduleName = "NetworkEye"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "125">
-               </Location>
-               <Location
-                  uuid = "C8B2C7BD-E647-4CF6-8337-5A0B76727FF1 - 7f353a8969ea20ad"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NEHTTPEyeSettingsViewController alertView:clickedButtonAtIndex:]"
-                  moduleName = "NetworkEye"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "145"
-                  endingLineNumber = "145"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,38 +34,6 @@
             endingLineNumber = "146"
             landmarkName = "-alertView:clickedButtonAtIndex:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5FEA69ED-5FB1-4762-BE5D-041A0877E622 - 7f353a8969ea2140"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NEHTTPEyeSettingsViewController alertView:clickedButtonAtIndex:]"
-                  moduleName = "NetworkEye"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "125">
-               </Location>
-               <Location
-                  uuid = "5FEA69ED-5FB1-4762-BE5D-041A0877E622 - 7f353a8969ea20cc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NEHTTPEyeSettingsViewController alertView:clickedButtonAtIndex:]"
-                  moduleName = "NetworkEye"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "67">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -114,38 +50,198 @@
             endingLineNumber = "115"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCCA755A-DAFE-4C18-8AE7-F1266C983FA1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "fetchJSON(_:basePath:decodableModelType:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2603AF12-DBBE-415D-987F-A92F16319B72"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchJSON(_:basePath:decodableModelType:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AD97980-BD6F-47DC-A932-42594FB6A87B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/ViewModel/UserListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getUserList(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E73B3025-CFDD-4974-8AD0-47679599986E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetch(_:basePath:success:failure:participantDetails:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BD34AE2-7E61-446C-BA6C-35CA72FB5272"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetch(_:basePath:success:failure:participantDetails:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A8BC5EF-040B-4C57-BBEC-51E4C4C96F4C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE5207FF-6FDF-4791-B367-3353361598E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchJSON(_:basePath:decodableModelType:completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "57AA4D55-8C5B-4FCE-B6BF-A3734B179175 - b230a5b274b52103"
+                  uuid = "CE5207FF-6FDF-4791-B367-3353361598E2 - 3365d7d54f654144"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__69-[NEHTTPEyeSettingsViewController tableView:didSelectRowAtIndexPath:]_block_invoke"
-                  moduleName = "NetworkEye"
+                  symbolName = "BaseProject.NetworkManager.fetchJSON&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: BaseProject.HTTPRequest, basePath: Swift.String, decodableModelType: &#x3c4;_0_0.Type, completion: (Swift.Result&lt;&#x3c4;_0_0, BaseProject.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BaseProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
+                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/BaseProject/NetworkHandler/NetworkWrapper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "41">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "298">
                </Location>
                <Location
-                  uuid = "57AA4D55-8C5B-4FCE-B6BF-A3734B179175 - b230a5b274b52122"
+                  uuid = "CE5207FF-6FDF-4791-B367-3353361598E2 - 9af5ee9856a6b209"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__69-[NEHTTPEyeSettingsViewController tableView:didSelectRowAtIndexPath:]_block_invoke"
-                  moduleName = "NetworkEye"
+                  symbolName = "closure #1 (Foundation.Data, Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; () in BaseProject.NetworkManager.fetchJSON&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: BaseProject.HTTPRequest, basePath: Swift.String, decodableModelType: &#x3c4;_0_0.Type, completion: (Swift.Result&lt;&#x3c4;_0_0, BaseProject.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BaseProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/Pods/NetworkEye/NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m"
+                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base-ios-swift/BaseProject/NetworkHandler/NetworkWrapper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "41">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "454">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "771DB87F-98F7-4B16-9B08-35FD3FC06EC6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchJSON(_:basePath:decodableModelType:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F831386-8F5D-4AAF-9954-BF9F767D660B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/NetworkHandler/NetworkWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchJSON(_:basePath:decodableModelType:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF7EB3D7-DCC3-4CC2-A206-7712DB6383D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

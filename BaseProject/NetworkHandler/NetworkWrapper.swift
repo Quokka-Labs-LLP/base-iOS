@@ -45,19 +45,19 @@ class NetworkManager: HTTPClient {
                     debugLog(logType: .networkResponse, anyObject: httpResponse.statusCode, text: "Unexpected Network response")
                     failure(nil, httpResponse, .failed(message: "Bad Request"))
                 }
+//                Thread 1 Queue : com.apple.main-thread (serial)
             } else {
                 // debug log response not received
                 debugLog(logType: .error, anyObject: nil, text: "Network response not received.")
             }
         }.resume()
     }
-    
+
     func fetchJSON<T: Decodable>(_ request: HTTPRequest,
                                  basePath: String,
                                  decodableModelType: T.Type,
-                                 completion: @escaping ((Result<T, NetworkError>) -> Void),
-                                 participantDetails: (([String: VLParticipantDetails])->())? = nil) {
-        
+                                 completion: @escaping ((Result<T, NetworkError>) -> Void)) {
+
         self.fetch(request, basePath: basePath) { data, response in
             do {
                 let decodedObject: GeneralNetworkModel<T> = try JSONDecoder().decode(GeneralNetworkModel.self, from: data)
@@ -78,15 +78,9 @@ class NetworkManager: HTTPClient {
                 debugLog(logType: .debug, anyObject: nil, text: "Skipped during optional unwraping ")
             }
             
-        } participantDetails: { pDetails in
-            
-            if let participantDetails = participantDetails {
-                participantDetails(pDetails)
-            }
         }
     }
-    
-    
+
     //MARK: - Private methods
     private func getParticipantDetils(from data: Data) -> [String: VLParticipantDetails]? {
         do {
