@@ -83,6 +83,7 @@
 		682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */; };
 		A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935B2A45B46C00A4601C /* ProfileView.swift */; };
 		A30E935E2A45B9E300A4601C /* ApiLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935D2A45B9E300A4601C /* ApiLogsView.swift */; };
+		A33855062A494E89005A0A9E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33855052A494E89005A0A9E /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +168,7 @@
 		5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A30E935B2A45B46C00A4601C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A30E935D2A45B9E300A4601C /* ApiLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogsView.swift; sourceTree = "<group>"; };
+		A33855052A494E89005A0A9E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +587,7 @@
 		49F0EE642A2F54D10091391C /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				A33855072A494E99005A0A9E /* ViewModel */,
 				A30E935A2A45B43600A4601C /* View */,
 				4948F09B2A330C1D006D2498 /* GoogleServicesSetup */,
 				495C821F2A31E29A00415440 /* Localization */,
@@ -628,13 +631,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A33855072A494E99005A0A9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A33855052A494E89005A0A9E /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E74A46997A6BB8DBE4CD37DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0738FB3CC6D6F4A9856832F0 /* Pods-BaseProject.debug.xcconfig */,
 				5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -689,7 +699,7 @@
 			);
 			mainGroup = 49F0EE592A2F54D00091391C;
 			packageReferences = (
-				495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */,
+				495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 49F0EE632A2F54D10091391C /* Products */;
 			projectDirPath = "";
@@ -794,6 +804,7 @@
 				495C82412A31F1B100415440 /* HTTPClient.swift in Sources */,
 				495C82142A31C11C00415440 /* SheetWithDetentsModifier.swift in Sources */,
 				49A8DB072A30A80500D7E1D6 /* MediaHandler.swift in Sources */,
+				A33855062A494E89005A0A9E /* UserListViewModel.swift in Sources */,
 				495C82192A31C11C00415440 /* RoundCornerShape.swift in Sources */,
 				495C82452A31F1B100415440 /* NetworkError.swift in Sources */,
 				49A8DAE22A309FF100D7E1D6 /* EndPointProvider.swift in Sources */,
@@ -1072,7 +1083,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */ = {
+		495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
@@ -1085,7 +1096,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		495C821B2A31DEA200415440 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm.git" */;
+			package = 495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

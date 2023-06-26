@@ -1,0 +1,18 @@
+PODS:
+  - NetworkEye (1.1.2):
+    - NetworkEye/standard (= 1.1.2)
+  - NetworkEye/standard (1.1.2)
+
+DEPENDENCIES:
+  - NetworkEye
+
+SPEC REPOS:
+  trunk:
+    - NetworkEye
+
+SPEC CHECKSUMS:
+  NetworkEye: c7b02c29eef8f9f33555bf96d265bcd24d14f6d4
+
+PODFILE CHECKSUM: 79dacc5f551fc2de3e71c4b7ecda3aefe006701e
+
+COCOAPODS: 1.12.0

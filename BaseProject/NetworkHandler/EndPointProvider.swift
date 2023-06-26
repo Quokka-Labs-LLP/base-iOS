@@ -10,6 +10,7 @@ import Foundation
 enum EndpointProvider {
     case login
     case logout
+    case userList
     
     var value: String {
         switch self {
@@ -17,13 +18,16 @@ enum EndpointProvider {
             return "/login"
         case .logout:
             return "/logout"
+        case .userList:
+            return "/posts"
         }
     }
     
     // Server Base url
     static func getBaseUrl() -> String {
       if Server.currentBuild == Server.Dev {
-        return "https://api-dev.quokkalabs.com"
+//        return "https://api-dev.quokkalabs.com"
+          return "https://jsonplaceholder.typicode.com"
       } else if Server.currentBuild == Server.Staging {
         return "https://api-stage.quokkalabs.com"
       } else {
