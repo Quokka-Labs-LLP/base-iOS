@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-typealias successIn = (_ success: Bool) -> ()
+typealias SuccessIn = (_ success: Bool) -> ()
 
 /**
  UINavigationController Extension
@@ -19,7 +19,7 @@ extension UINavigationController {
     - Parameter : viewcontroller want to pop
     - Return : nil
    */
-  func backToViewController(vc: Swift.AnyClass, success: successIn) {
+  func backToViewController(vc: Swift.AnyClass, success: SuccessIn) {
     // iterate to find the type of vc
     for element in viewControllers as Array {
       if element.isKind(of: vc) {

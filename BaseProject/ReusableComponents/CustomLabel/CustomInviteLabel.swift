@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CustomInviteLabel: View {
-    
+
     var title: String
     var fontSize: CGFloat = 15
     var weight: FontWeight = .regular
-    
+
     var body: some View {
         Text(title)
             .font(Font.appFont(size: fontSize, weight: weight))

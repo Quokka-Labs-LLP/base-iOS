@@ -3,11 +3,11 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/NetworkEye.svg?style=flat)](http://cocoadocs.org/docsets/NetworkEye/)
 [![Pod License](http://img.shields.io/cocoapods/l/NetworkEye.svg?style=flat)](https://opensource.org/licenses/MIT)
 [![Twitter](https://img.shields.io/badge/twitter-@coderyi9-green.svg?style=flat)](http://twitter.com/coderyi9)
-[![](https://img.shields.io/github/stars/coderyi/NetworkEye.svg)](https://github.com/coderyi/NetworkEye/stargazers) 
-[![](https://img.shields.io/github/forks/coderyi/NetworkEye.svg)](https://github.com/coderyi/NetworkEye/network) 
-[![](https://img.shields.io/cocoapods/dt/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye) 
-[![](https://img.shields.io/cocoapods/dm/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye) 
-[![](https://img.shields.io/cocoapods/dw/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye) 
+[![](https://img.shields.io/github/stars/coderyi/NetworkEye.svg)](https://github.com/coderyi/NetworkEye/stargazers)
+[![](https://img.shields.io/github/forks/coderyi/NetworkEye.svg)](https://github.com/coderyi/NetworkEye/network)
+[![](https://img.shields.io/cocoapods/dt/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye)
+[![](https://img.shields.io/cocoapods/dm/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye)
+[![](https://img.shields.io/cocoapods/dw/NetworkEye.svg?maxAge=2592000)](https://github.com/coderyi/NetworkEye)
 
 <p align="center" >
 
@@ -18,7 +18,7 @@
 
 NetworkEye,a iOS network debug library,It can monitor HTTP requests within the App and displays information related to the request.
 
-It can be detected HTTP request include web pages, NSURLConnection, NSURLSession, AFNetworking, third-party libraries, third-party SDK ,and so on. very convenient and practical. 
+It can be detected HTTP request include web pages, NSURLConnection, NSURLSession, AFNetworking, third-party libraries, third-party SDK ,and so on. very convenient and practical.
 
 It can be map local json file.
 
@@ -47,7 +47,7 @@ I think NetworkEye need a logo,I hope some can help me.
 #### Instruction
 Note：Use Network Eye in DEBUG mode
 
-add the code in AppDelegate.m   
+add the code in AppDelegate.m
 <pre>
 #import "NEHTTPEye.h"
 #if defined(DEBUG)||defined(_DEBUG)
@@ -110,4 +110,3 @@ thanks!
 [Zhu Lida](https://github.com/zld)
 
 [Jackrex](https://github.com/jackrex)
-

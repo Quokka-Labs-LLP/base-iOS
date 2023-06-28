@@ -11,16 +11,16 @@ import UIKit
 /// - Show activity indicator on root view.
 /// - Accessible throughout the codebase.
 class ActivityView: UIViewController {
-    
-    //MARK: - IBOutlets
+
+    // MARK: - IBOutlets
     @IBOutlet weak var largeActivityIndicator : UIActivityIndicatorView!
-    
-    //MARK: - LifeCycle Methods
+
+    // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    //MARK: - Methods
+    // MARK: - Methods
     /// Shows a full screen indicator with an opaque background.
     class func showActivityIndicator() {
 //        if let rootViewController = AppDelegate.sharedDelegate().getRootViewController() {
@@ -30,16 +30,13 @@ class ActivityView: UIViewController {
 //            rootViewController.present(activityView, animated: true)
 //        }
     }
-    
+
     /// Hides the activty indicator after checking if it is loaded in the current view hierarchy.
-    class func hideActivityIndicator(){
+    class func hideActivityIndicator() {
 //        if let rootViewController = AppDelegate.sharedDelegate().getRootViewController() {
 //            if let activityIndicator = rootViewController.presentedViewController as? ActivityView {
 //                activityIndicator.dismiss(animated: true)
 //            }
 //        }
     }
-    
-    
-    
 }

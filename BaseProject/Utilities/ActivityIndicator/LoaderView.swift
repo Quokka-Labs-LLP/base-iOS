@@ -85,7 +85,7 @@ struct GrowingArcIndicatorView: View {
       .easeIn(duration: 2)
       .repeatForever(autoreverses: false)
 
-    return GrowingArc(p: animatableParameter)
+    return GrowingArc(path: animatableParameter)
       .stroke(color, lineWidth: lineWidth)
       .onAppear {
         animatableParameter = 0
@@ -113,44 +113,43 @@ struct GrowingArcIndicatorView: View {
 struct GrowingArc: Shape {
   var maxLength = 2 * Double.pi - 0.7
   var lag = 0.35
-  var p: Double
+  var path: Double
 
   var animatableData: Double {
-    get { p }
-    set { p = newValue }
+    get { path }
+    set { path = newValue }
   }
 
   func path(in rect: CGRect) -> Path {
-    let h = p * 2
-    var length = h * maxLength
-    if h > 1, h < lag + 1 {
+    let height = path * 2
+    var length = height * maxLength
+    if height > 1, height < lag + 1 {
       length = maxLength
     }
-    if h > lag + 1 {
+    if height > lag + 1 {
       let coeff = 1 / (1 - lag)
-      let n = h - 1 - lag
-      length = (1 - n * coeff) * maxLength
+      let num = height - 1 - lag
+      length = (1 - num * coeff) * maxLength
     }
 
     let first = Double.pi / 2
     let second = 4 * Double.pi - first
 
-    var end = h * first
-    if h > 1 {
-      end = first + (h - 1) * second
+    var end = height * first
+    if height > 1 {
+      end = first + (height - 1) * second
     }
 
     let start = end + length
 
-    var p = Path()
-    p.addArc(
+    var path = Path()
+      path.addArc(
       center: CGPoint(x: rect.size.width / 2, y: rect.size.width / 2),
       radius: rect.size.width / 2,
       startAngle: Angle(radians: start),
       endAngle: Angle(radians: end),
       clockwise: true
     )
-    return p
+    return path
   }
 }
-

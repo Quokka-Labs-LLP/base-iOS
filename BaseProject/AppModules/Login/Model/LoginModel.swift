@@ -13,5 +13,5 @@ import Foundation
 struct LoginResoneModel {
     var name: String?
     var userId: String?
-    
+
 }

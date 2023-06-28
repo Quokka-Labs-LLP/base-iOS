@@ -8,11 +8,11 @@
 import Foundation
 
 struct HTTPResponse {
-    
+
     let code: Int
     let body: HTTPResponseBody
     let headers: [String: String]
-    
+
     init(code: Int, body: HTTPResponseBody, headers: [String: String] = [:]) {
         self.code = code
         self.body = body
@@ -21,7 +21,7 @@ struct HTTPResponse {
 }
 
 extension HTTPResponse {
-    
+
     init(from response: HTTPURLResponse, bodyConent: Data) {
         let body = HTTPResponseBody(content: bodyConent, type: response.contentType)
         let headers = Dictionary(response.allHeaderFields.lazy.map { key, value in
@@ -36,7 +36,7 @@ private extension HTTPURLResponse {
         guard let stringConentType = allHeaderFields["Content-Type"] as? String else {
             return nil
         }
-        
+
         return ContentType(from: stringConentType)
     }
 }

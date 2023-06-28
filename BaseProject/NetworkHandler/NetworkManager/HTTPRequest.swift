@@ -8,14 +8,14 @@
 import Foundation
 
 struct HTTPRequest {
-    
+
     let method: HTTPMethod
     let path: String
     let body: HTTPRequestBody?
     let queryItems: [String: String]
     let headers: [String: String]
     let scheme: Scheme
-    
+
     private init(
         method: HTTPMethod,
         path: String,
@@ -30,23 +30,23 @@ struct HTTPRequest {
             self.headers = headers
             self.scheme = scheme
         }
-    
+
     func urlRequest(with host: String) -> URLRequest? {
         guard let url = self.createUrl(with: host) else {
             return nil
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = self.method.rawValue
         request.allHTTPHeaderFields = self.headers
-        
+
         if let body = self.body {
             request.httpBody = body.content
             request.addValue(body.type.casePreservedFullyType, forHTTPHeaderField: "Content-Type")
         }
         return request
     }
-    
+
     private func createUrl(with host: String) -> URL? {
         var components = URLComponents()
         components.path = self.path
@@ -70,7 +70,7 @@ extension HTTPRequest {
          headers: [String: String] = [:]) {
         self.init(method: .get, path: path, body: nil, queryItems: queryItmes, headers: headers)
     }
-    
+
     init(post path: String,
          body: HTTPRequestBody,
          queryItmes: [String: String] = [:],

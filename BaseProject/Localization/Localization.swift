@@ -14,7 +14,7 @@ class Localization {
 }
 
 enum LocalizationConstant {
-    
+
     //Common String
     enum Common {
         static let close = Localization.string(key: "close")
@@ -22,7 +22,7 @@ enum LocalizationConstant {
         static let instaText = Localization.string(key: "instagram")
         static let aboutUs = Localization.string(key: "about_us")
     }
-    
+
     //Screen-feature wise screens text.
     enum HomeScreen {
         static let navigationTitle = "homeview"

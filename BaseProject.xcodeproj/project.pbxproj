@@ -672,6 +672,7 @@
 				49F0EE602A2F54D10091391C /* Resources */,
 				4948F09A2A330B79006D2498 /* Firebase Setup Run Script */,
 				D3B492196BB0273F5A306D06 /* [CP] Embed Pods Frameworks */,
+				A34D84052A4AE5AD00E6B291 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -759,6 +760,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource to copy\nDEBUG_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\nPROD_INFO_PLIST_FILE_NAME=GoogleService-Info.plist\n\n# Get references to debug and release versions of the plist file\nPROD_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Production/${PROD_INFO_PLIST_FILE_NAME}\nDEBUG_INFO_PLIST_FILE=${PROJECT_DIR}/BaseProject/GoogleServicesSetup/Development/${DEBUG_INFO_PLIST_FILE_NAME}\n\n# Make sure the release version exists\necho \"Looking for ${PROD_INFO_PLIST_FILE_NAME} in ${PROD_INFO_PLIST_FILE}\"\nif [ ! -f $PROD_INFO_PLIST_FILE ] ; then\n    echo \"File Production GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Make sure the debug version exists\necho \"Looking for ${DEBUG_INFO_PLIST_FILE_NAME} in ${DEBUG_INFO_PLIST_FILE}\"\nif [ ! -f $DEBUG_INFO_PLIST_FILE ] ; then\n    echo \"File Debug GoogleService-Info.plist not found.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the plist file\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying ${INFO_PLIST_FILE} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy the appropiate file to app bundle\nif [ \"${CONFIGURATION}\" == \"Release\" ] ; then\n    echo \"Config was: Release\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Debug\" ] ; then\n    echo \"Config was: Debug\"\n    echo \"File ${DEBUG_INFO_PLIST_FILE} copied\"\n    cp \"${DEBUG_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Config was: ${CONFIGURATION}\"\n    echo \"File ${PROD_INFO_PLIST_FILE} copied\"\n    cp \"${PROD_INFO_PLIST_FILE}\" \"${PLIST_DESTINATION}\"\nfi\n";
+		};
+		A34D84052A4AE5AD00E6B291 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		BB86B86FE87B0A7BBFF41278 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

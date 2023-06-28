@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct NavigationBarButtonStyle: ButtonStyle {
-    
+
     var imageName: String
     var width: CGFloat = 20
     var height: CGFloat = 20
-    
+
     func makeBody(configuration: Self.Configuration) -> some View {
         HStack {
             Image(imageName)

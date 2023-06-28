@@ -11,7 +11,7 @@ enum EndpointProvider {
     case login
     case logout
     case userList
-    
+
     var value: String {
         switch self {
         case .login:
@@ -22,7 +22,7 @@ enum EndpointProvider {
             return "/users"
         }
     }
-    
+
     // Server Base url
     static func getBaseUrl() -> String {
       if Server.currentBuild == Server.Dev {

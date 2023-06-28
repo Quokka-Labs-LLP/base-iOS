@@ -13,9 +13,9 @@ struct ApiLogsView: UIViewControllerRepresentable {
 
     typealias UIViewControllerType = NEHTTPEyeViewController
     func makeUIViewController(context: Context) -> NEHTTPEyeViewController {
-        let vc = NEHTTPEyeViewController()
+        let neHTTPEyeViewController = NEHTTPEyeViewController()
                // Do some configurations here if needed.
-               return vc
+               return neHTTPEyeViewController
            // Return MyViewController instance
        }
 

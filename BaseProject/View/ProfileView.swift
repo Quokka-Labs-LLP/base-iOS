@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     let  networkService = UserListViewModel(networkManager: NetworkManager())
-    
+
     @State var isPresented: Bool = false
     var body: some View {
 

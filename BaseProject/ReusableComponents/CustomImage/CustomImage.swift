@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CustomImage: View {
-    
+
     var imageName: String
     var width: CGFloat = 30
     var height: CGFloat = 30
-    
+
     var body: some View {
         Image(imageName)
             .resizable()

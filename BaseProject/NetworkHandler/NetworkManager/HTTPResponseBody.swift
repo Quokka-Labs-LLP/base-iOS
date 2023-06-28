@@ -8,10 +8,10 @@
 import Foundation
 
 struct HTTPResponseBody {
-    
+
     var content: Data
     var type: ContentType?
-    
+
     init(content: Data, type: ContentType?) {
         self.content = content
         self.type = type

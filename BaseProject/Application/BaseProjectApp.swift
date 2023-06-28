@@ -12,7 +12,7 @@ struct BaseProjectApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView().onAppear{
+                ContentView().onAppear {
                     NEHTTPEye.setEnabled(true)
                 }
             }

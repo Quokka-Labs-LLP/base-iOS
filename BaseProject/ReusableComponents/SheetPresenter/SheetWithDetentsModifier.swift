@@ -9,8 +9,7 @@ import Foundation
 import SwiftUI
 
 // 2 - Create the SwiftUI modifier conforming to the ViewModifier protocol
-struct sheetWithDetentsViewModifier<SwiftUIContent>: ViewModifier where SwiftUIContent: View {
-    
+struct SheetWithDetentsViewModifier<SwiftUIContent>: ViewModifier where SwiftUIContent: View {
     @Binding var isPresented: Bool
     let onDismiss: (() -> Void)?
     let detents: [UISheetPresentationController.Detent]

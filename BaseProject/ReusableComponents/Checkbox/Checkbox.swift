@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Checkbox: View {
     @Binding public var toggle: Bool
-    
+
     var body: some View {
         Button(action: {
             self.toggle.toggle()

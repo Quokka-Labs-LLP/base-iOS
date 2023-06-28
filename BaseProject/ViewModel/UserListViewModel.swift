@@ -21,9 +21,8 @@ class UserListViewModel: ObservableObject {
         let request = HTTPRequest(get: EndpointProvider.userList.value, headers: [:])
 //        jsonplaceholder.typicode.com
         networkManager.fetchJSON(request, basePath: "dummyjson.com", decodableModelType: UserListModel.self) { result in
-       
+
                completionHandler(result)
            }
        }
 }
-

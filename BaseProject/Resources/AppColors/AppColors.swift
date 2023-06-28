@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//MARK: This enum is used as a common place to maintain all colors used in App.
+// MARK: This enum is used as a common place to maintain all colors used in App.
 
 /*
  STEPS To use:
@@ -23,11 +23,11 @@ public enum AppColor {
     case violet
     case red
     case white
-    
+
     func withOpacity(_ opacity: Double) -> Color {
         return self.value.opacity(opacity)
     }
-    
+
     var value: Color {
         switch self {
         case .primaryAppColor:
@@ -45,4 +45,3 @@ public enum AppColor {
         }
     }
 }
-

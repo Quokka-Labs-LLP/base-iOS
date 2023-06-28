@@ -8,7 +8,7 @@
 import Foundation
 
 extension Int {
-    
+
     //MARK: This function is used in Date+Extension
     func of(_ name: String) -> String {
         guard self != 1 else { return "\(self) \(name)" }

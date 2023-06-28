@@ -14,7 +14,7 @@ enum NetworkError: Error, LocalizedError {
     case unableToDecodeResponseData(errorDescription: String)
     case other(message: String)
     case statusCode(statusCode: Int)
-    
+
     var errorDescription: String? {
         switch self {
         case .badRequest:

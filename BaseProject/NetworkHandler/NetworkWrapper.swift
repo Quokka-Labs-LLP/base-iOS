@@ -17,22 +17,19 @@ class NetworkManager: HTTPClient {
         self.session = sessionFactory.session(for: service, delegate: nil)
         self.service = service
     }
-    
-    //MARK: - Methods
-    func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler, participantDetails: (([String: VLParticipantDetails])->())? = nil) {
+    // MARK: - Methods
+    func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
         guard let urlRequest = request.urlRequest(with:  basePath ) else {
             failure(nil, nil, .badRequest)
             return
         }
         
         debugLog(logType: .info, anyObject: urlRequest, text: "Initiating URL Request")
-        
         let _ = session.dataTask(with: urlRequest) { data, response, error in
             if let error = error {
                 failure(nil, nil, .failed(message: error.localizedDescription))
                 return
             }
-            
             if let httpResponse = response as? HTTPURLResponse {
                 // if it is between 200..299
                 if (200...299).contains(httpResponse.statusCode) {

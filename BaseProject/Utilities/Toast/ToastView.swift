@@ -499,7 +499,7 @@ extension UIView {
    @throws `ToastError.missingParameters` when message, title, and image are all nil
    @return The newly created toast view
    */
-  public func toastViewForMessage(
+  public func toastViewForMessage (
     _ message: String?,
     title: String?,
     image: UIImage?,
@@ -510,18 +510,17 @@ extension UIView {
     guard message != nil || title != nil || image != nil else {
       throw ToastError.missingParameters
     }
-
     var messageLabel: UILabel?
     var titleLabel: UILabel?
     var imageView: UIImageView?
-
     let wrapperView = UIView()
+        
     wrapperView.backgroundColor = style.backgroundColor
     wrapperView.autoresizingMask = [
       .flexibleLeftMargin,
       .flexibleRightMargin,
       .flexibleTopMargin,
-      .flexibleBottomMargin,
+      .flexibleBottomMargin
     ]
     wrapperView.layer.cornerRadius = style.cornerRadius
 
@@ -604,7 +603,6 @@ extension UIView {
     }
 
     var messageRect = CGRect.zero
-
     if let messageLabel = messageLabel {
       messageRect.origin.x = imageRect.origin.x + imageRect.size.width + style.horizontalPadding
       messageRect.origin.y = titleRect.origin.y + titleRect.size.height + style.verticalPadding
@@ -624,23 +622,19 @@ extension UIView {
     )
 
     wrapperView.frame = CGRect(x: 0.0, y: 0.0, width: wrapperWidth, height: wrapperHeight)
-
     if let titleLabel = titleLabel {
       titleRect.size.width = longerWidth
       titleLabel.frame = titleRect
       wrapperView.addSubview(titleLabel)
     }
-
     if let messageLabel = messageLabel {
       messageRect.size.width = longerWidth
       messageLabel.frame = messageRect
       wrapperView.addSubview(messageLabel)
     }
-
     if let imageView = imageView {
       wrapperView.addSubview(imageView)
     }
-
     return wrapperView
   }
 }

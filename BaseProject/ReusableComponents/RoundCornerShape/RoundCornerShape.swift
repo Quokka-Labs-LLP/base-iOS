@@ -21,6 +21,6 @@ struct RoundCornerShape_Previews: PreviewProvider {
         RoundCornerShape(radius: 200, corners: [.topRight, .bottomRight])
             .padding()
             .frame(width: 400, height: 400)
-        
+
     }
 }
