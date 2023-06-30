@@ -16,7 +16,6 @@ struct SheetPresentationForSwiftUI<Content>: UIViewRepresentable where Content: 
     let detents: [UISheetPresentationController.Detent]
     let content: Content
 
-
     init(
         _ isPresented: Binding<Bool>,
         onDismiss: (() -> Void)? = nil,

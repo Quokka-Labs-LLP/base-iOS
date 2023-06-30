@@ -13,7 +13,7 @@ import UIKit
 class ActivityView: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var largeActivityIndicator : UIActivityIndicatorView!
+    @IBOutlet weak var largeActivityIndicator: UIActivityIndicatorView!
 
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {

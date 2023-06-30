@@ -371,7 +371,7 @@ extension UIView {
       .flexibleLeftMargin,
       .flexibleRightMargin,
       .flexibleTopMargin,
-      .flexibleBottomMargin,
+      .flexibleBottomMargin
     ]
     activityView.layer.cornerRadius = style.cornerRadius
 
@@ -382,7 +382,7 @@ extension UIView {
       activityView.layer.shadowOffset = style.shadowOffset
     }
 
-    let activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+      let activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     activityIndicatorView.center = CGPoint(
       x: activityView.bounds.size.width / 2.0,
       y: activityView.bounds.size.height / 2.0
@@ -421,7 +421,7 @@ extension UIView {
         toast.alpha = 1.0
       }
     ) { _ in
-      let timer = Timer(
+        let timer = Timer(
         timeInterval: duration,
         target: self,
         selector: #selector(UIView.toastTimerDidFinish(_:)),
@@ -444,8 +444,7 @@ extension UIView {
       options: [.curveEaseIn, .beginFromCurrentState],
       animations: {
         toast.alpha = 0.0
-      }
-    ) { _ in
+      }) { _ in
       toast.removeFromSuperview()
       self.activeToasts.remove(toast)
 
@@ -514,7 +513,7 @@ extension UIView {
     var titleLabel: UILabel?
     var imageView: UIImageView?
     let wrapperView = UIView()
-        
+
     wrapperView.backgroundColor = style.backgroundColor
     wrapperView.autoresizingMask = [
       .flexibleLeftMargin,

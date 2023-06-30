@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import UIKit
 
 class AlertManager {
     class func showOkayAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
@@ -50,4 +49,3 @@ class AlertManager {
         debugLog(logType: .warning, anyObject: nil, text: "Root view controller not found.")
     }
 }
-

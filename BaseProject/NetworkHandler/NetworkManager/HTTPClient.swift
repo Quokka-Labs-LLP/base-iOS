@@ -12,13 +12,10 @@ typealias NetworkFailureHandler = (Data?, HTTPURLResponse?, NetworkError) -> Voi
 
 protocol HTTPClient {
 
-//    func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler, )
     func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler)
 
-//    func fetchJSON<T: Decodable>(_ request: HTTPRequest, basePath: String, decodableModelType: T.Type, completion: @escaping ((Result<T, NetworkError>) -> Void))
     func fetchJSON<T: Decodable>(_ request: HTTPRequest, basePath: String, decodableModelType: T.Type, completion: @escaping ((Result<T, NetworkError>) -> Void))
 }
-
 
 protocol HTTPClientNormal {
     func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) -> HTTPClientNormal

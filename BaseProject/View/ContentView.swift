@@ -14,12 +14,12 @@ struct ContentView: View {
             NavigationLink {
                 ProfileView()
             } label: {
-                List() {
+                List {
                     HStack {
                         Image(systemName: "person.circle.fill")
                             .imageScale(.large)
                             .foregroundColor(.brown)
-                        Text("John").foregroundColor(.brown)
+                        Text("\(LocalizationConstant.Common.johnName)").foregroundColor(.brown)
                         Spacer()
                         Image(systemName: "info.circle")
 
@@ -27,8 +27,9 @@ struct ContentView: View {
                 }
 
             }
-        }.navigationTitle("Users")
+        }.navigationTitle(LocalizationConstant.Common.users)
         .onAppear {
+            print(Localize.currentLanguage())
             networkService.getUserList(completionHandler: { result in
                 switch result {
                 case .success(let response):
