@@ -1,0 +1,22 @@
+PODS:
+  - NetworkEye (1.1.2):
+    - NetworkEye/standard (= 1.1.2)
+  - NetworkEye/standard (1.1.2)
+  - SwiftLint (0.52.2)
+
+DEPENDENCIES:
+  - NetworkEye
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - NetworkEye
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  NetworkEye: c7b02c29eef8f9f33555bf96d265bcd24d14f6d4
+  SwiftLint: 1ac76dac888ca05cb0cf24d0c85887ec1209961d
+
+PODFILE CHECKSUM: ae9dfcb9178ae3b77d2a746ca5aa8386f4a58a3b
+
+COCOAPODS: 1.12.0

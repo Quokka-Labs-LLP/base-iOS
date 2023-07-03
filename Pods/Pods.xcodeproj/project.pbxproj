@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		247E312B5D9CD4CEE67FE9B33367DE86 /* NEURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 435540038381471388DDDFEB5C7B8BB3 /* NEURLSessionConfiguration.m */; };
+		2A706A4141B3FB0F3D60C89CCE20FF50 /* NEKeyboardShortcutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82AC953E6AE0FD9CC89EF294EAD0B98F /* NEKeyboardShortcutManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEBD723EDD5CBDAAF4EBEAEA1495559 /* NEShakeGestureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4B2F56ACD5819F7ED67D90A98B7903 /* NEShakeGestureManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		345DF3BF473006F5168428D2B4B72594 /* Pods-BaseProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8CB384D196F08294C2BB6C6CD32F58 /* NEHTTPEye.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A180E3621D5D74ABEFDBBE67A03CE4B /* NEHTTPEye.m */; };
+		572CF13F117AB9E949BCB4AB2BDCCA58 /* NEHTTPEyeSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F744F97D4999FD0AC5F0DB6E8A872F79 /* NEHTTPEyeSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573380CB26567CFCFB1BB82AC1A6B31E /* NEHTTPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06668FE1989CBD5DF938117EE321B450 /* NEHTTPModel.m */; };
+		6E3F4868D94FE70463E2AD68EA61750D /* NEMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B326CCB824EEFB1FB9F46444A8FA0D96 /* NEMapViewController.m */; };
+		7E2DFAD4DEB6311151F9864245613FED /* NEHTTPEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1EA6EF3D541FA411D4192EDEF26AD3 /* NEHTTPEyeViewController.m */; };
+		8881B34C5AD80EA23888A4EEE3090AE5 /* NEHTTPEyeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF72E28894BCD1AA006891910286901 /* NEHTTPEyeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90783A51AF79F76139086DDBCFF7128E /* NEHTTPModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA76172AD24ED5DE2F62EE75E0BD066 /* NEHTTPModelManager.m */; };
+		928D3A1E3F1AC39C23D1A37B9768CA0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */; };
+		94F7470F26F9EED8E57C45522DF6C9B3 /* NEHTTPEyeDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D43113D95CBD87337AAF16469AD642CD /* NEHTTPEyeDetailViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97CA63D15273568FF5178C1159299B96 /* NEHTTPModelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FDECC6E42B0992D217FC9392844072 /* NEHTTPModelManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9822C86038AEDD3399FBF4EA76E8E325 /* NEHTTPEyeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EAE074F97598D5A9109F5CC5C71AED /* NEHTTPEyeDetailViewController.m */; };
+		9EDE1F1C222F5827DDC468AC282DCD59 /* NEURLSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DF28695C6882928A69BF3DDF874E14 /* NEURLSessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A49D9F50E63DC5F26F0B16E40CBD7056 /* NEHTTPEyeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244C9D5ED9F66A4336664672C8BE0790 /* NEHTTPEyeSettingsViewController.m */; };
+		B8F2657AF910F27850C9CC73450A3349 /* NEShakeGestureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E43E5D9DF31B03BC10777D99CFDBA357 /* NEShakeGestureManager.m */; };
+		BE8591F1CC3538ECA797A5E6A11596D1 /* NEHTTPEye.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2F40ACE927BD3244A9F3B0A3503726 /* NEHTTPEye.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1D83746F2C68AD19F1D8A293AB24F2B /* NEHTTPModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 624C26C1512DD550175AB2ADB30DBD28 /* NEHTTPModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF9282F72D7D20CA836CAD6D0233BE02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */; };
+		D487698F1A7738E22591605D1DF98229 /* UIWindow+NEExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F7D0A03BC98D44313DB2DCB3EFB2A /* UIWindow+NEExtension.m */; };
+		DE94EDE16A3B211EFACB96336180F3BD /* NetworkEye-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 978C27A0E61D157A423D7D15BDB1C2C0 /* NetworkEye-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF11A660AE00C1AB1547251A765AA8D /* NEKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38892CD29BB74A5C2DC5B1C4206636CD /* NEKeyboardShortcutManager.m */; };
+		E8AFEEF7F21611E64D2DFEFBFF6F70BB /* Pods-BaseProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */; };
+		EDFC2037DA41AE6EDE2AE4D03622627F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */; };
+		F1552D5E2A0835F53E5C56DB3F092ED8 /* UIWindow+NEExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B867E3FDA8EC21F44483C75706D4FCCE /* UIWindow+NEExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F16E5C5C71C7BC5A6649792684A0A22B /* NEMapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 851B326710567942D86DAB7405315DD7 /* NEMapViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD09E2AB5BA3325AE1E03CA40C14192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */; };
+		FF04DEC23A8764EDA97178D50BEE08AF /* NetworkEye-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 113BF031FA38FF471ADA5D838C0D9006 /* NetworkEye-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F42E32A7F250C50795DEDAB2639ED3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F9F05C2C8B457CECA90172F5A85211;
+			remoteInfo = NetworkEye;
+		};
+		FC1AD7550268424768330881E0AA484D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0173607C05CE51FE3110774133FE9C9D /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		03BF3CDFADFAF9E20BDA7CA219259022 /* NetworkEye-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NetworkEye-Info.plist"; sourceTree = "<group>"; };
+		041857CABFFB04AAC11784373186397D /* Pods-BaseProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseProject-Info.plist"; sourceTree = "<group>"; };
+		06668FE1989CBD5DF938117EE321B450 /* NEHTTPModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPModel.m; path = NetworkEye/NetworkEye/NEHTTPModel.m; sourceTree = "<group>"; };
+		07F00058AD2A27DC7091159420F872FF /* Pods-BaseProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseProject-dummy.m"; sourceTree = "<group>"; };
+		113BF031FA38FF471ADA5D838C0D9006 /* NetworkEye-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NetworkEye-dummy.m"; sourceTree = "<group>"; };
+		18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		1CF72E28894BCD1AA006891910286901 /* NEHTTPEyeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPEyeViewController.h; path = NetworkEye/NetworkEye/NEHTTPEyeViewController.h; sourceTree = "<group>"; };
+		244C9D5ED9F66A4336664672C8BE0790 /* NEHTTPEyeSettingsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPEyeSettingsViewController.m; path = NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.m; sourceTree = "<group>"; };
+		2E4B2F56ACD5819F7ED67D90A98B7903 /* NEShakeGestureManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEShakeGestureManager.h; path = NetworkEye/NetworkEye/NEShakeGestureManager.h; sourceTree = "<group>"; };
+		361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		38892CD29BB74A5C2DC5B1C4206636CD /* NEKeyboardShortcutManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEKeyboardShortcutManager.m; path = NetworkEye/NetworkEye/NEKeyboardShortcutManager.m; sourceTree = "<group>"; };
+		435540038381471388DDDFEB5C7B8BB3 /* NEURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEURLSessionConfiguration.m; path = NetworkEye/NetworkEye/NEURLSessionConfiguration.m; sourceTree = "<group>"; };
+		4A180E3621D5D74ABEFDBBE67A03CE4B /* NEHTTPEye.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPEye.m; path = NetworkEye/NetworkEye/NEHTTPEye.m; sourceTree = "<group>"; };
+		4B7F7D0A03BC98D44313DB2DCB3EFB2A /* UIWindow+NEExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+NEExtension.m"; path = "NetworkEye/NetworkEye/UIWindow+NEExtension.m"; sourceTree = "<group>"; };
+		543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		56DF28695C6882928A69BF3DDF874E14 /* NEURLSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEURLSessionConfiguration.h; path = NetworkEye/NetworkEye/NEURLSessionConfiguration.h; sourceTree = "<group>"; };
+		624C26C1512DD550175AB2ADB30DBD28 /* NEHTTPModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPModel.h; path = NetworkEye/NetworkEye/NEHTTPModel.h; sourceTree = "<group>"; };
+		6CA5F061F9D4D82042AC78F6810B6F02 /* Pods-BaseProject */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BaseProject"; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		82AC953E6AE0FD9CC89EF294EAD0B98F /* NEKeyboardShortcutManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEKeyboardShortcutManager.h; path = NetworkEye/NetworkEye/NEKeyboardShortcutManager.h; sourceTree = "<group>"; };
+		851B326710567942D86DAB7405315DD7 /* NEMapViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEMapViewController.h; path = NetworkEye/NetworkEye/NEMapViewController.h; sourceTree = "<group>"; };
+		9496AD88EC8DC0D62DF1596A85D4B947 /* NetworkEye-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetworkEye-prefix.pch"; sourceTree = "<group>"; };
+		978C27A0E61D157A423D7D15BDB1C2C0 /* NetworkEye-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetworkEye-umbrella.h"; sourceTree = "<group>"; };
+		9BA76172AD24ED5DE2F62EE75E0BD066 /* NEHTTPModelManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPModelManager.m; path = NetworkEye/NetworkEye/NEHTTPModelManager.m; sourceTree = "<group>"; };
+		9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5EAE074F97598D5A9109F5CC5C71AED /* NEHTTPEyeDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPEyeDetailViewController.m; path = NetworkEye/NetworkEye/NEHTTPEyeDetailViewController.m; sourceTree = "<group>"; };
+		AB2F40ACE927BD3244A9F3B0A3503726 /* NEHTTPEye.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPEye.h; path = NetworkEye/NetworkEye/NEHTTPEye.h; sourceTree = "<group>"; };
+		AED31F52C19B13B2BE557E8F0ED4B719 /* NetworkEye.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NetworkEye.modulemap; sourceTree = "<group>"; };
+		B326CCB824EEFB1FB9F46444A8FA0D96 /* NEMapViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEMapViewController.m; path = NetworkEye/NetworkEye/NEMapViewController.m; sourceTree = "<group>"; };
+		B867E3FDA8EC21F44483C75706D4FCCE /* UIWindow+NEExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+NEExtension.h"; path = "NetworkEye/NetworkEye/UIWindow+NEExtension.h"; sourceTree = "<group>"; };
+		BE1EA6EF3D541FA411D4192EDEF26AD3 /* NEHTTPEyeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEHTTPEyeViewController.m; path = NetworkEye/NetworkEye/NEHTTPEyeViewController.m; sourceTree = "<group>"; };
+		BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseProject-umbrella.h"; sourceTree = "<group>"; };
+		C667AA4C6D061F043A9E573973358754 /* NetworkEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NetworkEye.debug.xcconfig; sourceTree = "<group>"; };
+		D3870FC4968927A4E0244CDD5A1BDEA5 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		D43113D95CBD87337AAF16469AD642CD /* NEHTTPEyeDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPEyeDetailViewController.h; path = NetworkEye/NetworkEye/NEHTTPEyeDetailViewController.h; sourceTree = "<group>"; };
+		DF50B5EB00628578C47384CB4EF481B5 /* Pods-BaseProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E43E5D9DF31B03BC10777D99CFDBA357 /* NEShakeGestureManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NEShakeGestureManager.m; path = NetworkEye/NetworkEye/NEShakeGestureManager.m; sourceTree = "<group>"; };
+		E8FDECC6E42B0992D217FC9392844072 /* NEHTTPModelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPModelManager.h; path = NetworkEye/NetworkEye/NEHTTPModelManager.h; sourceTree = "<group>"; };
+		EAEEACC03E2BFE13053626A8C8F7E3A4 /* Pods-BaseProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseProject-frameworks.sh"; sourceTree = "<group>"; };
+		F3DBD6B4763BAB8C779297D41F9EF31D /* NetworkEye */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NetworkEye; path = NetworkEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5931AB5B2E8C5F19761C637BEE716F8 /* NetworkEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NetworkEye.release.xcconfig; sourceTree = "<group>"; };
+		F744F97D4999FD0AC5F0DB6E8A872F79 /* NEHTTPEyeSettingsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NEHTTPEyeSettingsViewController.h; path = NetworkEye/NetworkEye/NEHTTPEyeSettingsViewController.h; sourceTree = "<group>"; };
+		FA15A6B60E9F6D04ED09D5813781B9A7 /* Pods-BaseProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaseProject.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0180A7F0E4F8B6E6980CF5C5E7332B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928D3A1E3F1AC39C23D1A37B9768CA0F /* CoreGraphics.framework in Frameworks */,
+				FDD09E2AB5BA3325AE1E03CA40C14192 /* Foundation.framework in Frameworks */,
+				CF9282F72D7D20CA836CAD6D0233BE02 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F04E4BF8E30D964D121451FA1AB233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFC2037DA41AE6EDE2AE4D03622627F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E9A611B7FA8B84E0117394CA54DC92 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05C52B6C05AA2CD23F3B9CFE497D52BA /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				159A358D4B9386D477D75775B31CA511 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		159A358D4B9386D477D75775B31CA511 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0173607C05CE51FE3110774133FE9C9D /* SwiftLint.debug.xcconfig */,
+				D3870FC4968927A4E0244CDD5A1BDEA5 /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		37E9A611B7FA8B84E0117394CA54DC92 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */,
+				543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */,
+				361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4774802AC9CF914D017CC8EE988C4A67 /* NetworkEye */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3FE4B8FD36BA39937FB675610E3DB /* standard */,
+				8F897AA36429A00407F28D8719204568 /* Support Files */,
+			);
+			name = NetworkEye;
+			path = NetworkEye;
+			sourceTree = "<group>";
+		};
+		4A18CE6657C51AE81D36CFCB79D21E70 /* Pods-BaseProject */ = {
+			isa = PBXGroup;
+			children = (
+				FA15A6B60E9F6D04ED09D5813781B9A7 /* Pods-BaseProject.modulemap */,
+				DF50B5EB00628578C47384CB4EF481B5 /* Pods-BaseProject-acknowledgements.markdown */,
+				07F00058AD2A27DC7091159420F872FF /* Pods-BaseProject-acknowledgements.plist */,
+				0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */,
+				EAEEACC03E2BFE13053626A8C8F7E3A4 /* Pods-BaseProject-frameworks.sh */,
+				041857CABFFB04AAC11784373186397D /* Pods-BaseProject-Info.plist */,
+				BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */,
+				18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */,
+				9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */,
+			);
+			name = "Pods-BaseProject";
+			path = "Target Support Files/Pods-BaseProject";
+			sourceTree = "<group>";
+		};
+		81DE137E143AE792C2353673514FD69A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4774802AC9CF914D017CC8EE988C4A67 /* NetworkEye */,
+				05C52B6C05AA2CD23F3B9CFE497D52BA /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F897AA36429A00407F28D8719204568 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AED31F52C19B13B2BE557E8F0ED4B719 /* NetworkEye.modulemap */,
+				113BF031FA38FF471ADA5D838C0D9006 /* NetworkEye-dummy.m */,
+				03BF3CDFADFAF9E20BDA7CA219259022 /* NetworkEye-Info.plist */,
+				9496AD88EC8DC0D62DF1596A85D4B947 /* NetworkEye-prefix.pch */,
+				978C27A0E61D157A423D7D15BDB1C2C0 /* NetworkEye-umbrella.h */,
+				C667AA4C6D061F043A9E573973358754 /* NetworkEye.debug.xcconfig */,
+				F5931AB5B2E8C5F19761C637BEE716F8 /* NetworkEye.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NetworkEye";
+			sourceTree = "<group>";
+		};
+		9DE7EBDAC228A2A88EE003AA50C71F45 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A18CE6657C51AE81D36CFCB79D21E70 /* Pods-BaseProject */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				81DE137E143AE792C2353673514FD69A /* Pods */,
+				F72561D4FF23425A64F3A31DAFC3AADA /* Products */,
+				9DE7EBDAC228A2A88EE003AA50C71F45 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA3FE4B8FD36BA39937FB675610E3DB /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				AB2F40ACE927BD3244A9F3B0A3503726 /* NEHTTPEye.h */,
+				4A180E3621D5D74ABEFDBBE67A03CE4B /* NEHTTPEye.m */,
+				D43113D95CBD87337AAF16469AD642CD /* NEHTTPEyeDetailViewController.h */,
+				A5EAE074F97598D5A9109F5CC5C71AED /* NEHTTPEyeDetailViewController.m */,
+				F744F97D4999FD0AC5F0DB6E8A872F79 /* NEHTTPEyeSettingsViewController.h */,
+				244C9D5ED9F66A4336664672C8BE0790 /* NEHTTPEyeSettingsViewController.m */,
+				1CF72E28894BCD1AA006891910286901 /* NEHTTPEyeViewController.h */,
+				BE1EA6EF3D541FA411D4192EDEF26AD3 /* NEHTTPEyeViewController.m */,
+				624C26C1512DD550175AB2ADB30DBD28 /* NEHTTPModel.h */,
+				06668FE1989CBD5DF938117EE321B450 /* NEHTTPModel.m */,
+				E8FDECC6E42B0992D217FC9392844072 /* NEHTTPModelManager.h */,
+				9BA76172AD24ED5DE2F62EE75E0BD066 /* NEHTTPModelManager.m */,
+				82AC953E6AE0FD9CC89EF294EAD0B98F /* NEKeyboardShortcutManager.h */,
+				38892CD29BB74A5C2DC5B1C4206636CD /* NEKeyboardShortcutManager.m */,
+				851B326710567942D86DAB7405315DD7 /* NEMapViewController.h */,
+				B326CCB824EEFB1FB9F46444A8FA0D96 /* NEMapViewController.m */,
+				2E4B2F56ACD5819F7ED67D90A98B7903 /* NEShakeGestureManager.h */,
+				E43E5D9DF31B03BC10777D99CFDBA357 /* NEShakeGestureManager.m */,
+				56DF28695C6882928A69BF3DDF874E14 /* NEURLSessionConfiguration.h */,
+				435540038381471388DDDFEB5C7B8BB3 /* NEURLSessionConfiguration.m */,
+				B867E3FDA8EC21F44483C75706D4FCCE /* UIWindow+NEExtension.h */,
+				4B7F7D0A03BC98D44313DB2DCB3EFB2A /* UIWindow+NEExtension.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		F72561D4FF23425A64F3A31DAFC3AADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3DBD6B4763BAB8C779297D41F9EF31D /* NetworkEye */,
+				6CA5F061F9D4D82042AC78F6810B6F02 /* Pods-BaseProject */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9BE79D2BDCABB40BE2C364C3B484AB61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8591F1CC3538ECA797A5E6A11596D1 /* NEHTTPEye.h in Headers */,
+				94F7470F26F9EED8E57C45522DF6C9B3 /* NEHTTPEyeDetailViewController.h in Headers */,
+				572CF13F117AB9E949BCB4AB2BDCCA58 /* NEHTTPEyeSettingsViewController.h in Headers */,
+				8881B34C5AD80EA23888A4EEE3090AE5 /* NEHTTPEyeViewController.h in Headers */,
+				C1D83746F2C68AD19F1D8A293AB24F2B /* NEHTTPModel.h in Headers */,
+				97CA63D15273568FF5178C1159299B96 /* NEHTTPModelManager.h in Headers */,
+				2A706A4141B3FB0F3D60C89CCE20FF50 /* NEKeyboardShortcutManager.h in Headers */,
+				F16E5C5C71C7BC5A6649792684A0A22B /* NEMapViewController.h in Headers */,
+				2FEBD723EDD5CBDAAF4EBEAEA1495559 /* NEShakeGestureManager.h in Headers */,
+				DE94EDE16A3B211EFACB96336180F3BD /* NetworkEye-umbrella.h in Headers */,
+				9EDE1F1C222F5827DDC468AC282DCD59 /* NEURLSessionConfiguration.h in Headers */,
+				F1552D5E2A0835F53E5C56DB3F092ED8 /* UIWindow+NEExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F150B7F7F7D54938E551F0C926372E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345DF3BF473006F5168428D2B4B72594 /* Pods-BaseProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BA240E758039DCE7A6061144C02BF08 /* Pods-BaseProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493A0F8E5E7B856679A894F28544DA02 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */;
+			buildPhases = (
+				C8F150B7F7F7D54938E551F0C926372E /* Headers */,
+				291D9242C9AB725180BB277C83C74017 /* Sources */,
+				86F04E4BF8E30D964D121451FA1AB233 /* Frameworks */,
+				CA53D80A4E9CA2575898A7BA6215A4DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8BD67E263D6AB094879F38B317321D /* PBXTargetDependency */,
+				A021CA131D79A67A9A7354DB26794A97 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaseProject";
+			productName = Pods_BaseProject;
+			productReference = 6CA5F061F9D4D82042AC78F6810B6F02 /* Pods-BaseProject */;
+			productType = "com.apple.product-type.framework";
+		};
+		67F9F05C2C8B457CECA90172F5A85211 /* NetworkEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAC1536666121476C405C988194D276 /* Build configuration list for PBXNativeTarget "NetworkEye" */;
+			buildPhases = (
+				9BE79D2BDCABB40BE2C364C3B484AB61 /* Headers */,
+				341B14A02B3A0E4D8F89DD913FFE85F0 /* Sources */,
+				0180A7F0E4F8B6E6980CF5C5E7332B17 /* Frameworks */,
+				3B26A2B873F5B658E2E55726DFF6868A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkEye;
+			productName = NetworkEye;
+			productReference = F3DBD6B4763BAB8C779297D41F9EF31D /* NetworkEye */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F72561D4FF23425A64F3A31DAFC3AADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67F9F05C2C8B457CECA90172F5A85211 /* NetworkEye */,
+				1BA240E758039DCE7A6061144C02BF08 /* Pods-BaseProject */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B26A2B873F5B658E2E55726DFF6868A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53D80A4E9CA2575898A7BA6215A4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		291D9242C9AB725180BB277C83C74017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AFEEF7F21611E64D2DFEFBFF6F70BB /* Pods-BaseProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		341B14A02B3A0E4D8F89DD913FFE85F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8CB384D196F08294C2BB6C6CD32F58 /* NEHTTPEye.m in Sources */,
+				9822C86038AEDD3399FBF4EA76E8E325 /* NEHTTPEyeDetailViewController.m in Sources */,
+				A49D9F50E63DC5F26F0B16E40CBD7056 /* NEHTTPEyeSettingsViewController.m in Sources */,
+				7E2DFAD4DEB6311151F9864245613FED /* NEHTTPEyeViewController.m in Sources */,
+				573380CB26567CFCFB1BB82AC1A6B31E /* NEHTTPModel.m in Sources */,
+				90783A51AF79F76139086DDBCFF7128E /* NEHTTPModelManager.m in Sources */,
+				DFF11A660AE00C1AB1547251A765AA8D /* NEKeyboardShortcutManager.m in Sources */,
+				6E3F4868D94FE70463E2AD68EA61750D /* NEMapViewController.m in Sources */,
+				B8F2657AF910F27850C9CC73450A3349 /* NEShakeGestureManager.m in Sources */,
+				FF04DEC23A8764EDA97178D50BEE08AF /* NetworkEye-dummy.m in Sources */,
+				247E312B5D9CD4CEE67FE9B33367DE86 /* NEURLSessionConfiguration.m in Sources */,
+				D487698F1A7738E22591605D1DF98229 /* UIWindow+NEExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8BD67E263D6AB094879F38B317321D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkEye;
+			target = 67F9F05C2C8B457CECA90172F5A85211 /* NetworkEye */;
+			targetProxy = 0F42E32A7F250C50795DEDAB2639ED3A /* PBXContainerItemProxy */;
+		};
+		A021CA131D79A67A9A7354DB26794A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = FC1AD7550268424768330881E0AA484D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		224C123F3D302855BAF840389E175694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26EA5A9600226D2B7D8D25152A304F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3870FC4968927A4E0244CDD5A1BDEA5 /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		97BFDF96F00BEC3DBEE955378F11EA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C570CCD1A9CB4A8ED685DB40B82D66BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5931AB5B2E8C5F19761C637BEE716F8 /* NetworkEye.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NetworkEye/NetworkEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetworkEye/NetworkEye-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NetworkEye/NetworkEye.modulemap";
+				PRODUCT_MODULE_NAME = NetworkEye;
+				PRODUCT_NAME = NetworkEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAC6EFEBD58C69AC7096EB12B1BCCB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C667AA4C6D061F043A9E573973358754 /* NetworkEye.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NetworkEye/NetworkEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetworkEye/NetworkEye-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NetworkEye/NetworkEye.modulemap";
+				PRODUCT_MODULE_NAME = NetworkEye;
+				PRODUCT_NAME = NetworkEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9E1A48A750B946DE9877594C6E735E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0173607C05CE51FE3110774133FE9C9D /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493A0F8E5E7B856679A894F28544DA02 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BFDF96F00BEC3DBEE955378F11EA8A /* Debug */,
+				224C123F3D302855BAF840389E175694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAC1536666121476C405C988194D276 /* Build configuration list for PBXNativeTarget "NetworkEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC6EFEBD58C69AC7096EB12B1BCCB0D /* Debug */,
+				C570CCD1A9CB4A8ED685DB40B82D66BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E1A48A750B946DE9877594C6E735E4 /* Debug */,
+				26EA5A9600226D2B7D8D25152A304F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
