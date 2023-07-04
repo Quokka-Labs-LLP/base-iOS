@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-
 // MARK: - WelcomeElement
 struct UserListModel: Codable {
     let id: String

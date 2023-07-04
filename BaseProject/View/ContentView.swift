@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CocoaDebug
 
 struct ContentView: View {
     let  networkService = UserListViewModel(networkManager: NetworkManager())
@@ -30,6 +31,7 @@ struct ContentView: View {
         }.navigationTitle(LocalizationConstant.Common.users)
         .onAppear {
             print(Localize.currentLanguage())
+           
             networkService.getUserList(completionHandler: { result in
                 switch result {
                 case .success(let response):

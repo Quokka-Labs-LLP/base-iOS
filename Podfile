@@ -8,5 +8,5 @@ target 'BaseProject' do
   # Pods for BaseProject
   pod 'NetworkEye'
   pod 'SwiftLint'
-  
+  pod 'CocoaDebug', :configurations => ['Debug']
 end

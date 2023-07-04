@@ -12,8 +12,7 @@ struct Checkbox: View {
 
     var body: some View {
         Button(action: {
-            self.toggle.toggle()
-        }) {
+            self.toggle.toggle()}){
             Image(self.toggle ? "checkbox_checked" : "checkbox_unchecked")
                 .renderingMode(.original)
                 .resizable()

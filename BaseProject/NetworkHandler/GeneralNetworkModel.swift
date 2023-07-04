@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct GeneralNetworkModel<T: Decodable>: Decodable {
     var code: Int?
     var message: String?

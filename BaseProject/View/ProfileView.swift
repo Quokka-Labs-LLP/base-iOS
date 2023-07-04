@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CocoaDebug
 
 struct ProfileView: View {
     let  networkService = UserListViewModel(networkManager: NetworkManager())
@@ -34,7 +35,7 @@ struct ProfileView: View {
                 Dropdown()
 
         }.shadow(radius: 10)
-        .fullScreenCover(isPresented: $isPresented, content: ApiLogsView.init)
+//        .fullScreenCover(isPresented: $isPresented, content: ApiLogsView.init)
     }
 }
 
@@ -76,8 +77,11 @@ struct Dropdown: View {
                         }
                         selectedLanguage = languageOption[index]
                     })
+
                 }
             }
+        }.onAppear {
+            print("Debug message onAppear")
         }
     }
 }

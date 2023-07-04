@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import CocoaDebug
+
 
 class UserListViewModel: ObservableObject {
     @Published var userData: UserListModel?
@@ -21,7 +23,9 @@ class UserListViewModel: ObservableObject {
         let request = HTTPRequest(get: EndpointProvider.userList.value, headers: [:])
 //        jsonplaceholder.typicode.com
         networkManager.fetchJSON(request, basePath: "dummyjson.com", decodableModelType: UserListModel.self) { result in
-
+               print("jyoti\(result)")
+            NSLog("efrf",
+            "")
                completionHandler(result)
            }
        }

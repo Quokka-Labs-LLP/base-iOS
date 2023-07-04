@@ -28,13 +28,13 @@ enum LogType: String {
 func debugLog(logType: LogType = .info, anyObject: Any? = nil, text: String = "", fileName: String = #file, function: String = #function, line: Int = #line) {
     if debugMode {
         if let anyObject = anyObject {
-            print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
+            debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
             print(anyObject)
         } else {
             if (logType == .selfNotAvailable || logType == .optionalUnwrapFail) {
-                print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : Falling through")
+                debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : Falling through")
             } else {
-                print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
+                debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
             }
         }
     } else {
