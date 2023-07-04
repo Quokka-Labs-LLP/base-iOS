@@ -1,6 +1,0 @@
-framework module NetworkEye {
-  umbrella header "NetworkEye-umbrella.h"
-
-  export *
-  module * { export * }
-}

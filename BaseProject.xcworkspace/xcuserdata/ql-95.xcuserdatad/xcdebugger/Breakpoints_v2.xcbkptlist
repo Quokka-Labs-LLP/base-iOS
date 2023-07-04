@@ -238,13 +238,13 @@
             filePath = "Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "364"
-            endingLineNumber = "364"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "reloadLogs(needScrollToEnd:needReloadData:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abe82"
+                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abc73"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -254,12 +254,12 @@
                   urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "361"
-                  endingLineNumber = "361"
+                  startingLineNumber = "378"
+                  endingLineNumber = "378"
                   offsetFromSymbolStart = "7124">
                </Location>
                <Location
-                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abe82"
+                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abc73"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -269,8 +269,8 @@
                   urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "361"
-                  endingLineNumber = "361"
+                  startingLineNumber = "378"
+                  endingLineNumber = "378"
                   offsetFromSymbolStart = "7260">
                </Location>
             </Locations>
@@ -286,8 +286,8 @@
             filePath = "Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "reloadLogs(needScrollToEnd:needReloadData:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -465,6 +465,22 @@
             startingLineNumber = "362"
             endingLineNumber = "362"
             landmarkName = "didTapMail(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C10378D-EC08-4FB7-AF9E-B47E829A7E5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CocoaDebug/Sources/App/CrashLogger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "addCrash(name:reason:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

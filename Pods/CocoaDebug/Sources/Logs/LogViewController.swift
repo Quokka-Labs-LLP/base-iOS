@@ -58,6 +58,7 @@ class LogViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
         // create an action
         let firstAction: UIAlertAction = UIAlertAction(title: "share via email", style: .default) { [weak self] action -> Void in
+            self?.messageBody = ""
             if let mailComposeViewController = self?.configureMailComposer() {
                 self?.present(mailComposeViewController, animated: true, completion: nil)
             }
@@ -65,12 +66,16 @@ class LogViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
         let secondAction: UIAlertAction = UIAlertAction(title: "copy to clipboard", style: .default) { [weak self] action -> Void in
             _ = self?.configureMailComposer(true)
-            UIPasteboard.general.string = self?.defaultModels.first?.str
+            self?.messageBody = ""
+            self?.shareDebugLogs()
+            UIPasteboard.general.string = self?.messageBody
         }
 
         let moreAction: UIAlertAction = UIAlertAction(title: "more", style: .default) { [weak self] action -> Void in
             _ = self?.configureMailComposer(true)
-            let items: [Any] = [self?.defaultModels.first?.str ?? ""]
+            self?.messageBody = ""
+            self?.shareDebugLogs()
+            let items: [Any] = [self?.messageBody ?? ""]
             let action = UIActivityViewController(activityItems: items, applicationActivities: nil)
             if UI_USER_INTERFACE_IDIOM() == .phone {
                 self?.present(action, animated: true, completion: nil)
@@ -100,6 +105,13 @@ class LogViewController: UIViewController, MFMailComposeViewControllerDelegate {
     }
     //MARK: - tool
     //搜索逻辑
+    func shareDebugLogs() {
+        for i in 0...(self.defaultModels.count + 1) {
+                    self.messageBody.append(self.defaultModels[i].str ?? "")
+                    self.messageBody.append("\n ---------------- \n")
+            }
+
+    }
 
     func searchLogic(_ searchText: String = "") {
         
@@ -169,14 +181,14 @@ class LogViewController: UIViewController, MFMailComposeViewControllerDelegate {
     func configureMailComposer(_ copy: Bool = false) -> MFMailComposeViewController? {
 
         //1.image
-        var img: UIImage? = nil
-        var isImage: Bool = false
+//        var img: UIImage? = nil
+//        var isImage: Bool = false
 //        if let httpModel = httpModel {
 //            isImage = httpModel.isImage
 //        }
 
         //2.body message ------------------ start ------------------
-        var string: String = ""
+//        var string: String = ""
 //        messageBody = ""
 
 //        for model in detailModels {
@@ -272,20 +284,22 @@ class LogViewController: UIViewController, MFMailComposeViewControllerDelegate {
         mailComposeVC.setCcRecipients(CocoaDebugSettings.shared.emailCcRecipients)
 
         //4.image
-        if let img = img {
-            if let imageData = img.pngData() {
-                mailComposeVC.addAttachmentData(imageData, mimeType: "image/png", fileName: "image")
-            }
-        }
+//        if let img = img {
+//            if let imageData = img.pngData() {
+//                mailComposeVC.addAttachmentData(imageData, mimeType: "image/png", fileName: "image")
+//            }
+//        }
 
         //5.body
+        if messageBody.count <= 0 {
+            messageBody.removeAll()
+        }
         for i in 0..<defaultModels.count {
             messageBody.append(defaultModels[i].str)
-
+            messageBody.append("\n ---------------- \n")
         }
         mailComposeVC.setMessageBody(messageBody, isHTML: false)
-        //6.subject
-//        mailComposeVC.setSubject(url)
+
 
         return mailComposeVC
     }

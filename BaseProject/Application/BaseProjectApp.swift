@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import NetworkEye
 import CocoaDebug
 @main
 struct BaseProjectApp: App {
@@ -19,6 +18,7 @@ struct BaseProjectApp: App {
                     print("Debug message")
                     CocoaDebug.enable()
                     CocoaDebugSettings.shared.enableLogMonitoring = true
+                    CocoaDebugSettings.shared.enableCrashRecording = true
                     print("Debug message")
 //                    Swift.print(message)
 //                       _SwiftLogHelper.shared.handleLog(file: file, function: function, line: line, message: message, color: color)

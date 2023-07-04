@@ -288,7 +288,7 @@
                     <connections>
                         <outlet property="defaultSearchBar" destination="uvy-4Z-9DD" id="GO5-1a-rZW"/>
                         <outlet property="defaultTableView" destination="fq3-3m-DV4" id="qSc-hl-eXa"/>
-                        <outlet property="deleteItem" destination="WWD-nk-hBH" id="UGl-wk-ar3"/>
+                        <outlet property="deleteItem" destination="WWD-nk-hBH" id="dEe-cf-Tod"/>
                         <outlet property="rnSearchBar" destination="jdZ-56-n8X" id="BY8-lq-SaA"/>
                         <outlet property="rnTableView" destination="iwa-b2-R5v" id="x2e-Jc-le4"/>
                         <outlet property="segmentedControl" destination="RqA-gF-lv2" id="p0B-kF-gXH"/>
