@@ -419,7 +419,8 @@ extension UIView {
       options: [.curveEaseOut, .allowUserInteraction],
       animations: {
         toast.alpha = 1.0
-      }) { _ in
+      }
+    ) { _ in
         let timer = Timer(
         timeInterval: duration,
         target: self,
