@@ -15,7 +15,7 @@ struct SheetWithDetentsViewModifier<SwiftUIContent>: ViewModifier where SwiftUIC
     let detents: [UISheetPresentationController.Detent]
     let swiftUIContent: SwiftUIContent
     
-    init(isPresented: Binding<Bool>, detents: [UISheetPresentationController.Detent] = [.medium()] , onDismiss: (() -> Void)? = nil, content: () -> SwiftUIContent) {
+    init(isPresented: Binding<Bool>, detents: [UISheetPresentationController.Detent] = [.medium()], onDismiss: (() -> Void)? = nil, content: () -> SwiftUIContent) {
         self._isPresented = isPresented
         self.onDismiss = onDismiss
         self.swiftUIContent = content()
@@ -24,7 +24,7 @@ struct SheetWithDetentsViewModifier<SwiftUIContent>: ViewModifier where SwiftUIC
     
     func body(content: Content) -> some View {
         ZStack {
-            SheetPresentationForSwiftUI($isPresented,onDismiss: onDismiss, detents: detents) {
+            SheetPresentationForSwiftUI($isPresented, onDismiss: onDismiss, detents: detents) {
                 swiftUIContent
             }.fixedSize()
             content

@@ -25,7 +25,7 @@ class NetworkManager: HTTPClient {
         }
 
         debugLog(logType: .info, anyObject: urlRequest, text: "Initiating URL Request")
-        let _ = session.dataTask(with: urlRequest) { data, response, error in
+        session.dataTask(with: urlRequest) { data, response, error in
             if let error = error {
                 failure(nil, nil, .failed(message: error.localizedDescription))
                 return
@@ -36,6 +36,7 @@ class NetworkManager: HTTPClient {
                     if let data = data {
                         let json = try? JSONSerialization.jsonObject(with: data)
                         debugLog(logType: .networkResponse, anyObject: json, text: "URL Response")
+                        print("\(data)")
                         success(data, response)
                     }
                 } else {
@@ -63,7 +64,7 @@ class NetworkManager: HTTPClient {
                         completion(.success(data))
                     }
                 } else {
-                    completion(.failure(.failed(message:decodedObject.message ?? "unknown error")))
+                    completion(.failure(.failed(message: decodedObject.message ?? "unknown error")))
                 }
             } catch {
                 completion(.failure(.unableToDecodeResponseData(errorDescription: error.localizedDescription)))

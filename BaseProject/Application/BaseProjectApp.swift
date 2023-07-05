@@ -12,19 +12,21 @@ struct BaseProjectApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView().onAppear {
-//                    NEHTTPEye.setEnabled(true)
-
-                    print("Debug message")
-                    CocoaDebug.enable()
-                    CocoaDebugSettings.shared.enableLogMonitoring = true
-                    CocoaDebugSettings.shared.enableCrashRecording = true
-                    print("Debug message")
-//                    Swift.print(message)
-//                       _SwiftLogHelper.shared.handleLog(file: file, function: function, line: line, message: message, color: color)
-                }
+                ContentView()
+                    .onAppear {
+                        debugPrint("Debug message 1")
+                        enableCocoaDebugSeetting()
+                    }
             }
 
         }
+    }
+    private func enableCocoaDebugSeetting() {
+        CocoaDebug.enable()
+        CocoaDebugSettings.shared.enableLogMonitoring = true
+        CocoaDebugSettings.shared.enableCrashRecording = true
+        CocoaDebugSettings.shared.enableMemoryLeaksMonitoring_ViewController = true
+        CocoaDebugSettings.shared.enableRNMonitoring  = true
+        debugPrint("Debug message 2")
     }
 }

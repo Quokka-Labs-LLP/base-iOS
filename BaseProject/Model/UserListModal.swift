@@ -6,7 +6,8 @@
 //
 
 import Foundation
-// MARK: - WelcomeElement
+
+// MARK: - UserListModel
 struct UserListModel: Codable {
     let id: String
     let name, username, email: String

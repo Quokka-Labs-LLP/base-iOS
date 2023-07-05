@@ -119,10 +119,9 @@ public class Localize: NSObject {
         print(selectedLanguage)
         UserDefaults.standard.removeObject(forKey: LCLCurrentLanguageKey)
         UserDefaults.standard.setValue(selectedLanguage, forKey: "selectedLanguage")
-        if (selectedLanguage != currentLanguage()) {
+
+        if selectedLanguage != currentLanguage() {
             UserDefaults.standard.set(selectedLanguage, forKey: LCLCurrentLanguageKey)
-//       let v =     UserDefaults.standard.value(forKey: LCLCurrentLanguageKey)
-//          print(v)
             UserDefaults.standard.synchronize()
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
         }
@@ -138,9 +137,9 @@ public class Localize: NSObject {
             return LCLDefaultLanguage
         }
         let availableLanguages: [String] = self.availableLanguages()
-        if (availableLanguages.contains(preferredLanguage)) {
+        if availableLanguages.contains(preferredLanguage) {
             defaultLanguage = preferredLanguage
-        }else {
+        } else {
             defaultLanguage = LCLDefaultLanguage
         }
         return defaultLanguage
@@ -160,7 +159,7 @@ public class Localize: NSObject {
      - Returns: The localized string.
      */
     public class func displayNameForLanguage(language: String) -> String {
-        let locale : NSLocale = NSLocale(localeIdentifier: currentLanguage())
+        let locale: NSLocale = NSLocale(localeIdentifier: currentLanguage())
         if let displayName = locale.displayName(forKey: NSLocale.Key.languageCode, value: language) {
             return displayName
         }

@@ -10,8 +10,8 @@ import UIKit
 
 class HelperMethods {
     
-    class public func textFieldShowAlert(textField : UITextField,alertMessage : String){
-        if (textField.text!.isEmpty){
+    class public func textFieldShowAlert(textField: UITextField, alertMessage: String) {
+        if textField.text!.isEmpty {
 //            AlertMessage.sharedAlertMessage.showAlert(alertText: alertMessage)
         }
     }

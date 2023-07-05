@@ -9,7 +9,10 @@ import SwiftUI
 import CocoaDebug
 
 struct ContentView: View {
-    let  networkService = UserListViewModel(networkManager: NetworkManager())
+    // MARK: - Properties
+    let  userListViewModel = UserListViewModel(networkManager: NetworkManager())
+
+    // MARK: - Body
     var body: some View {
         VStack {
             NavigationLink {
@@ -23,29 +26,30 @@ struct ContentView: View {
                         Text("\(LocalizationConstant.Common.johnName)").foregroundColor(.brown)
                         Spacer()
                         Image(systemName: "info.circle")
-
                     }
+                }
+            }
+        }.navigationTitle(LocalizationConstant.Common.users)
+            .onAppear {
+                print(Localize.currentLanguage())
+                getUserList()
+            }
+    }
+    // MARK: - Private Method
+    private func getUserList() {
+        userListViewModel.getUserList(completionHandler: { result in
+            switch result {
+            case .success(let response):
+                userListViewModel.userData = response
+                print(response)
+            case .failure(let failure):
+                if let failure = failure.errorDescription {
+                    print(failure)
                 }
 
             }
-        }.navigationTitle(LocalizationConstant.Common.users)
-        .onAppear {
-            print(Localize.currentLanguage())
-           
-            networkService.getUserList(completionHandler: { result in
-                switch result {
-                case .success(let response):
-                    networkService.userData = response
-                    debugPrint(response)
-                case .failure(let failure):
-                    if let failure = failure.errorDescription {
-                        debugPrint(failure)
-                    }
 
-                }
-
-            })
-        }
+        })
     }
 }
 
