@@ -158,8 +158,8 @@
             filePath = "BaseProject/View/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -224,6 +224,36 @@
                   startingLineNumber = "378"
                   endingLineNumber = "378"
                   offsetFromSymbolStart = "7260">
+               </Location>
+               <Location
+                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abc73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CocoaDebug.LogViewController.reloadLogs(needScrollToEnd: Swift.Bool, needReloadData: Swift.Bool) -&gt; ()"
+                  moduleName = "CocoaDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "378"
+                  endingLineNumber = "378"
+                  offsetFromSymbolStart = "7539">
+               </Location>
+               <Location
+                  uuid = "DEFA4C9F-1159-464F-934E-5DCFDA92AD33 - 4fac4e0d668abc73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CocoaDebug.LogViewController.reloadLogs(needScrollToEnd: Swift.Bool, needReloadData: Swift.Bool) -&gt; ()"
+                  moduleName = "CocoaDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/Pods/CocoaDebug/Sources/Logs/LogViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "378"
+                  endingLineNumber = "378"
+                  offsetFromSymbolStart = "7709">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -434,6 +464,22 @@
             endingLineNumber = "96"
             landmarkName = "addCrash(name:reason:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56F5F09A-4C84-4362-A3FA-10E351E2873B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseProject/View/ProfileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

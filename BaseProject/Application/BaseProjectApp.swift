@@ -9,6 +9,7 @@ import SwiftUI
 import CocoaDebug
 @main
 struct BaseProjectApp: App {
+   @ObservedObject var settings = UserSettings()
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -17,10 +18,11 @@ struct BaseProjectApp: App {
                         debugPrint("Debug message 1")
                         enableCocoaDebugSeetting()
                     }
-            }
+            }.environmentObject(settings)
 
         }
     }
+
     private func enableCocoaDebugSeetting() {
         CocoaDebug.enable()
         CocoaDebugSettings.shared.enableLogMonitoring = true

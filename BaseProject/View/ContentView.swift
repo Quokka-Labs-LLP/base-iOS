@@ -10,6 +10,7 @@ import CocoaDebug
 
 struct ContentView: View {
     // MARK: - Properties
+    @EnvironmentObject var settings: UserSettings
     let  userListViewModel = UserListViewModel(networkManager: NetworkManager())
 
     // MARK: - Body
@@ -23,13 +24,13 @@ struct ContentView: View {
                         Image(systemName: "person.circle.fill")
                             .imageScale(.large)
                             .foregroundColor(.brown)
-                        Text("\(LocalizationConstant.Common.johnName)").foregroundColor(.brown)
+                        Text(",\(settings.lang)").foregroundColor(.brown)
                         Spacer()
                         Image(systemName: "info.circle")
                     }
                 }
             }
-        }.navigationTitle(LocalizationConstant.Common.users)
+        }.navigationTitle("")
             .onAppear {
                 print(Localize.currentLanguage())
                 getUserList()

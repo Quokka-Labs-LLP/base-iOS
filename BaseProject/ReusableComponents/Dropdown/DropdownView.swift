@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct DropdownView: View {
-
+    @EnvironmentObject var settings: UserSettings
     @State var selectedLanguage = ""
     @State var languageOption =  ["English", "Arabic"]
     var body: some View {
@@ -23,7 +23,7 @@ struct DropdownView: View {
                         Group {
                             Image(systemName: "info.circle")
                             Text(languageOption[index])
-                        }//: GROUP
+                        }
                         .foregroundColor(.gray)
                         .font(.system(.body).bold())
 
@@ -33,11 +33,7 @@ struct DropdownView: View {
                         }
                     }
                     .onTapGesture(perform: {
-                        if Localize.currentLanguage() == "ar" {
-                            Localize.setCurrentLanguage(language: "en")
-                        } else {
-                            Localize.setCurrentLanguage(language: "ar")
-                        }
+                        changeLanguage()
                         selectedLanguage = languageOption[index]
                     })
 
@@ -46,5 +42,10 @@ struct DropdownView: View {
         }.onAppear {
             print("Debug message onAppear")
         }
+
     }
+    func changeLanguage() {
+            self.settings.lang = self.settings.lang == "ar" ? "en" : "ar"
+    }
+
 }

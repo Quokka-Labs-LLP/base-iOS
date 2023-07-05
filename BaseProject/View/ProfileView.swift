@@ -10,6 +10,8 @@ import CocoaDebug
 
 struct ProfileView: View {
     // MARK: - Properties
+    @EnvironmentObject var settings: UserSettings
+
     @State var isPresented: Bool = false
 
     // MARK: - Body
@@ -21,9 +23,10 @@ struct ProfileView: View {
             .shadow(radius: 5)
         Spacer()
             .frame(height: 20)
-        Text("\(LocalizationConstant.Common.helloText)")
+        
+        Text("\(LocalizationConstant.Common.helloText.localized(settings.lang))")
             .foregroundColor(.gray)
-
+        Text("\(localized(string: LocalizationConstant.Common.helloText, lang: settings.lang))")
         Text("john@gmail.com")
             .foregroundColor(.black)
         List {
@@ -34,6 +37,7 @@ struct ProfileView: View {
                 })
             DropdownView()
         }.shadow(radius: 10)
+
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SwiftUI
 /// Internal current language key
 let LCLCurrentLanguageKey = "LCLCurrentLanguageKey"
 
@@ -26,8 +26,8 @@ Swift 1.x friendly localization syntax, replaces NSLocalizedString
 - Parameter string: Key to be localized.
 - Returns: The localized string.
 */
-public func localized(string: String) -> String {
-    return string.localized()
+public func localized(string: String, lang: String) -> String {
+    return string.localized(lang)
 }
 
 /**
@@ -56,6 +56,13 @@ public extension String {
      Swift 2 friendly localization syntax, replaces NSLocalizedString
      - Returns: The localized string.
      */
+    func localized(_ lang: String) -> String {
+
+        let path = Bundle.main.path(forResource: lang, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+
+        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+    }
     func localized() -> String {
         if let path = Bundle.main.path(forResource: Localize.currentLanguage(), ofType: "lproj"), let bundle = Bundle(path: path) {
             return bundle.localizedString(forKey: self, value: nil, table: nil)
@@ -165,4 +172,9 @@ public class Localize: NSObject {
         }
         return String()
     }
+}
+class UserSettings: ObservableObject {
+
+    @Published var lang: String = "ar"
+
 }
