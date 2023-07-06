@@ -23,14 +23,13 @@ struct ProfileView: View {
             .shadow(radius: 5)
         Spacer()
             .frame(height: 20)
-        
-        Text("\(LocalizationConstant.Common.helloText.localized(settings.lang))")
+
+        Text(LocalizationConstant.Common.helloText.localized(settings.lang))
             .foregroundColor(.gray)
-        Text("\(localized(string: LocalizationConstant.Common.helloText, lang: settings.lang))")
         Text("john@gmail.com")
             .foregroundColor(.black)
         List {
-            Text("\(LocalizationConstant.Common.apiLogs)")
+            Text(LocalizationConstant.Common.apiLogs.localized(settings.lang))
                 .foregroundColor(.black)
                 .onTapGesture(perform: {
                     isPresented = true

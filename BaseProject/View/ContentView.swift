@@ -24,13 +24,14 @@ struct ContentView: View {
                         Image(systemName: "person.circle.fill")
                             .imageScale(.large)
                             .foregroundColor(.brown)
-                        Text(",\(settings.lang)").foregroundColor(.brown)
+                        Text(LocalizationConstant.Common.johnName.localized(settings.lang))
+                            .foregroundColor(.brown)
                         Spacer()
                         Image(systemName: "info.circle")
                     }
                 }
             }
-        }.navigationTitle("")
+        }.navigationTitle(LocalizationConstant.Common.users.localized(settings.lang))
             .onAppear {
                 print(Localize.currentLanguage())
                 getUserList()

@@ -27,6 +27,7 @@ enum LocalizationConstant {
         static let facebookText = Localization.string(key: "facebook")
         static let instaText = Localization.string(key: "instagram")
         static let aboutUs = Localization.string(key: "about_us")
+        
     }
 
     // Screen-feature wise screens text.
