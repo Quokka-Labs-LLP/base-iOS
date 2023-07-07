@@ -18,6 +18,37 @@ class NetworkManager: HTTPClient {
         self.service = service
     }
     // MARK: - Methods
+    func fetchData(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
+        guard let urlRequest = request.urlRequest(with: basePath ) else {
+            failure(nil, nil, .badRequest)
+            return
+        }
+
+        debugLog(logType: .info, anyObject: urlRequest, text: "Initiating URL Request")
+        session.dataTask(with: urlRequest) { data, response, error in
+//            if let error = error {
+//                failure(nil, nil, .failed(message: error.localizedDescription))
+//                return
+//            }
+//            if let httpResponse = response as? HTTPURLResponse {
+//                // if it is between 200..299
+//                if (200...299).contains(httpResponse.statusCode) {
+//                    if let data = data {
+//                        let json = try? JSONSerialization.jsonObject(with: data)
+//                        debugLog(logType: .networkResponse, anyObject: json, text: "URL Response")
+//                        print("\(data)")
+//                        success(data, response)
+//                    }
+//                } else {
+//                    debugLog(logType: .networkResponse, anyObject: httpResponse.statusCode, text: "Unexpected Network response")
+//                    failure(nil, httpResponse, .failed(message: "Bad Request"))
+//                }
+////                Thread 1 Queue : com.apple.main-thread (serial)
+//            } else {
+//                // debug log response not received
+//                debugLog(logType: .error, anyObject: nil, text: "Network response not received.")
+            }
+        }
     func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
         guard let urlRequest = request.urlRequest(with: basePath ) else {
             failure(nil, nil, .badRequest)

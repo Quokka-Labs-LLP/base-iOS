@@ -1,0 +1,25 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+# MacOS generated
+.DS_Store
+.Trashes
+
+# Xcode generated
+*~.nib
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Personal user setting
+*.xccheckout
+xcuserdata/**/*
+*.xcuserstate
+*.xcworkspace
+
+# Pods
+Pods/
+.Podfile.lock
