@@ -21,5 +21,4 @@ struct Checkbox: View {
         .frame(width: 20, height: 20)
         .buttonStyle(PlainButtonStyle())
     }
-
 }

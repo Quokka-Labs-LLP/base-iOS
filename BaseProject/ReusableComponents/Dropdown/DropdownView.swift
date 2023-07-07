@@ -33,7 +33,7 @@ struct DropdownView: View {
                         }
                     }
                     .onTapGesture(perform: {
-                        changeLanguage()
+                        changeLanguage(index: index)
                         selectedLanguage = languageOption[index]
                     })
 
@@ -44,8 +44,15 @@ struct DropdownView: View {
         }
 
     }
-    func changeLanguage() {
-            self.settings.lang = self.settings.lang == "ar" ? "en" : "ar"
-    }
 
+    func changeLanguage(index: Int) {
+        switch languageOption[index] {
+        case "English":
+            self.settings.lang = LanguageOption.base.rawValue
+        case "Arabic":
+            self.settings.lang = LanguageOption.arabic.rawValue
+        default:
+            self.settings.lang = LanguageOption.base.rawValue
+        }
+     }
 }

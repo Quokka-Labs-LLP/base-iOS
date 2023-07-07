@@ -12,6 +12,7 @@ class Localization {
         print( NSLocalizedString(key, tableName: "Localizable", bundle: Bundle(for: self), value: "", comment: ""))
         return key
     }
+
 }
 
 enum LocalizationConstant {
@@ -34,4 +35,9 @@ enum LocalizationConstant {
     enum HomeScreen {
         static let navigationTitle = "homeview"
     }
+}
+enum LanguageOption: String {
+    case english = "en"
+    case arabic = "ar"
+    case base = "base"
 }

@@ -28,6 +28,19 @@ struct ProfileView: View {
             .foregroundColor(.gray)
         Text("john@gmail.com")
             .foregroundColor(.black)
+            .contextMenu {
+                    Button {
+                        print("Change country setting")
+                    } label: {
+                        Label("Choose Country", systemImage: "globe")
+                    }
+
+                    Button {
+                        print("Enable geolocation")
+                    } label: {
+                        Label("Detect Location", systemImage: "location.circle")
+                    }
+                }
         List {
             Text(LocalizationConstant.Common.apiLogs.localized(settings.lang))
                 .foregroundColor(.black)
