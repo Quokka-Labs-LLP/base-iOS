@@ -1,0 +1,21 @@
+/*
+  Localizable.strings
+  BaseProject
+
+  Created by Himanshu Kesharwani on 08/06/23.
+
+*/
+
+// MARK: Class Use to add all localizable values:
+
+"helloJohn" = "أهلا جون";
+"instagram" = "Our Instagram";
+"about_us" = "About";
+"about" = "About";
+"accept" = "Accept";
+"account_settings" = "Account Settings";
+"close" = "Close";
+"facebook" = "فيسبوك";
+"users" = "المستخدمين";
+"john" = "جون";
+"apiLogs" = "سجلات Api";

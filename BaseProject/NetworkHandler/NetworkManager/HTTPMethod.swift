@@ -15,9 +15,6 @@ enum HTTPMethod: String, RawRepresentable {
 }
 
 enum Scheme: String {
-    case https = "https"
-    case http = "http"
+    case https
+    case http
 }
-
-
-

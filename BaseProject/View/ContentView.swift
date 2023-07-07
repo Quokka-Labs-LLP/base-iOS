@@ -6,43 +6,52 @@
 //
 
 import SwiftUI
+import CocoaDebug
 
 struct ContentView: View {
-    let  networkService = UserListViewModel(networkManager: NetworkManager())
+    // MARK: - Properties
+    @EnvironmentObject var settings: UserSettings
+    let  userListViewModel = UserListViewModel(networkManager: NetworkManager())
+
+    // MARK: - Body
     var body: some View {
         VStack {
             NavigationLink {
                 ProfileView()
             } label: {
-                List() {
+                List {
                     HStack {
                         Image(systemName: "person.circle.fill")
                             .imageScale(.large)
                             .foregroundColor(.brown)
-                        Text("John").foregroundColor(.brown)
+                        Text(LocalizationConstant.Common.johnName.localized(settings.lang))
+                            .foregroundColor(.brown)
                         Spacer()
                         Image(systemName: "info.circle")
-
                     }
+                }
+            }
+        }.navigationTitle(LocalizationConstant.Common.users.localized(settings.lang))
+            .onAppear {
+                print(Localize.currentLanguage())
+                getUserList()
+            }
+    }
+    // MARK: - Private Method
+    private func getUserList() {
+        userListViewModel.getUserList(completionHandler: { result in
+            switch result {
+            case .success(let response):
+                userListViewModel.userData = response
+                print(response)
+            case .failure(let failure):
+                if let failure = failure.errorDescription {
+                    print(failure)
                 }
 
             }
-        }.navigationTitle("Users")
-        .onAppear {
-            networkService.getUserList(completionHandler: { result in
-                switch result {
-                case .success(let response):
-                    networkService.userData = response
-                    debugPrint(response)
-                case .failure(let failure):
-                    if let failure = failure.errorDescription {
-                        debugPrint(failure)
-                    }
 
-                }
-
-            })
-        }
+        })
     }
 }
 

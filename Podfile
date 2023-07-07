@@ -6,7 +6,6 @@ target 'BaseProject' do
   use_frameworks!
 
   # Pods for BaseProject
-  pod 'NetworkEye'
   pod 'SwiftLint'
-  
+  pod 'CocoaDebug', :configurations => ['Debug']
 end

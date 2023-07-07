@@ -19,7 +19,7 @@ enum EndpointProvider {
         case .logout:
             return "/logout"
         case .userList:
-            return "/users"
+            return "/users/1"
         }
     }
 
@@ -35,4 +35,3 @@ enum EndpointProvider {
       }
     }
 }
-

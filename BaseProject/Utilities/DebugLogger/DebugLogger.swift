@@ -7,13 +7,13 @@
 
 import Foundation
 
-//MARK: - Debug Flag
-#warning("Turning debugMode `false` will disable logging throughout the app.")
-fileprivate let debugMode : Bool = true
-fileprivate var haveInformedDevAboutDebugMode: Bool = false
+// MARK: - Debug Flag
+// warning("Turning debugMode `false` will disable logging throughout the app.")
+private let debugMode: Bool = true
+private var haveInformedDevAboutDebugMode: Bool = false
 
-//MARK: - Log type
-enum LogType : String {
+// MARK: - Log type
+enum LogType: String {
     case error = "[ERROR]"
     case info = "[INFO]"
     case debug = "[DEBUG]"
@@ -24,17 +24,17 @@ enum LogType : String {
     case optionalUnwrapFail = "[OPTIONAL UNWRAP FAILURE]"
 }
 
-//MARK: - logger
+// MARK: - logger
 func debugLog(logType: LogType = .info, anyObject: Any? = nil, text: String = "", fileName: String = #file, function: String = #function, line: Int = #line) {
     if debugMode {
         if let anyObject = anyObject {
-            print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
+            debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
             print(anyObject)
         } else {
             if (logType == .selfNotAvailable || logType == .optionalUnwrapFail) {
-                print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : Falling through")
+                debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : Falling through")
             } else {
-                print("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
+                debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
             }
         }
     } else {
@@ -43,11 +43,11 @@ func debugLog(logType: LogType = .info, anyObject: Any? = nil, text: String = ""
             haveInformedDevAboutDebugMode = true
         }
     }
-    
+
     func timeForDebugLog() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm:ss a"
-        
+
         return dateFormatter.string(from: Date())
     }
 }

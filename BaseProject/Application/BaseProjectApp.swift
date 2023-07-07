@@ -6,17 +6,29 @@
 //
 
 import SwiftUI
-import NetworkEye
+import CocoaDebug
 @main
 struct BaseProjectApp: App {
+   @ObservedObject var settings = UserSettings()
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView().onAppear {
-                    NEHTTPEye.setEnabled(true)
-                }
-            }
+                ContentView()
+                    .onAppear {
+                        debugPrint("Debug message 1")
+                        enableCocoaDebugSeetting()
+                    }
+            }.environmentObject(settings)
 
         }
+    }
+
+    private func enableCocoaDebugSeetting() {
+        CocoaDebug.enable()
+        CocoaDebugSettings.shared.enableLogMonitoring = true
+        CocoaDebugSettings.shared.enableCrashRecording = true
+        CocoaDebugSettings.shared.enableMemoryLeaksMonitoring_ViewController = true
+        CocoaDebugSettings.shared.enableRNMonitoring  = true
+        debugPrint("Debug message 2")
     }
 }

@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-
 struct CustomLabelWithImage: View {
     
     var title: String
     var fontSize: CGFloat = 15
     var weight: FontWeight = .regular
-    var imageName:String
+    var imageName: String
     var titleColor: Color = AppColor.primaryAppColor.value
     
     var body: some View {

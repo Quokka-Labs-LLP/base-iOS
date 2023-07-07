@@ -1,22 +1,20 @@
 PODS:
-  - NetworkEye (1.1.2):
-    - NetworkEye/standard (= 1.1.2)
-  - NetworkEye/standard (1.1.2)
+  - CocoaDebug (1.7.7)
   - SwiftLint (0.52.2)
 
 DEPENDENCIES:
-  - NetworkEye
+  - CocoaDebug
   - SwiftLint
 
 SPEC REPOS:
   trunk:
-    - NetworkEye
+    - CocoaDebug
     - SwiftLint
 
 SPEC CHECKSUMS:
-  NetworkEye: c7b02c29eef8f9f33555bf96d265bcd24d14f6d4
+  CocoaDebug: b38d31464b91a9775928f8667d114db07b136565
   SwiftLint: 1ac76dac888ca05cb0cf24d0c85887ec1209961d
 
-PODFILE CHECKSUM: ae9dfcb9178ae3b77d2a746ca5aa8386f4a58a3b
+PODFILE CHECKSUM: 3f6f210293e8db168432adb73068e0511d0dd6bf
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

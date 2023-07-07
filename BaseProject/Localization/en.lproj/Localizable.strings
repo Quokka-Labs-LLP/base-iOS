@@ -1,9 +1,9 @@
-/* 
+/*
   Localizable.strings
   BaseProject
 
   Created by Himanshu Kesharwani on 08/06/23.
-  
+
 */
 
 //MARK: Class Use to add all localizable values:
@@ -15,3 +15,7 @@
 "accept" = "Accept";
 "account_settings" = "Account Settings";
 "close" = "Close";
+"john" = "John";
+"apiLogs" = "Api Logs";
+"users" = "Users";
+"helloJohn" = "Hello John";

@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import CocoaDebug
 
 struct ProfileView: View {
-    let  networkService = UserListViewModel(networkManager: NetworkManager())
+    // MARK: - Properties
+    @EnvironmentObject var settings: UserSettings
 
     @State var isPresented: Bool = false
-    var body: some View {
 
+    // MARK: - Body
+    var body: some View {
         Image(systemName: "person.circle.fill")
             .resizable()
             .frame(width: 100, height: 100)
@@ -20,19 +23,33 @@ struct ProfileView: View {
             .shadow(radius: 5)
         Spacer()
             .frame(height: 20)
-        Text("Hello John")
-            .foregroundColor(.gray)
 
+        Text(LocalizationConstant.Common.helloText.localized(settings.lang))
+            .foregroundColor(.gray)
         Text("john@gmail.com")
             .foregroundColor(.black)
-        List() {
-                Text("Api Logs")
-                .foregroundColor(.blue).onTapGesture(perform: {
+            .contextMenu {
+                    Button {
+                        print("Change country setting")
+                    } label: {
+                        Label("Choose Country", systemImage: "globe")
+                    }
+
+                    Button {
+                        print("Enable geolocation")
+                    } label: {
+                        Label("Detect Location", systemImage: "location.circle")
+                    }
+                }
+        List {
+            Text(LocalizationConstant.Common.apiLogs.localized(settings.lang))
+                .foregroundColor(.black)
+                .onTapGesture(perform: {
                     isPresented = true
                 })
+            DropdownView()
+        }.shadow(radius: 10)
 
-        }
-        .fullScreenCover(isPresented: $isPresented, content: ApiLogsView.init)
     }
 }
 

@@ -41,7 +41,7 @@ extension Date {
     }
 
     func startOfMonth() -> Date {
-        var components = Calendar.current.dateComponents([.year,.month], from: self)
+        var components = Calendar.current.dateComponents([.year, .month], from: self)
         components.day = 1
         let firstDateOfMonth: Date = Calendar.current.date(from: components)!
         return firstDateOfMonth
@@ -81,7 +81,7 @@ extension Date {
         let latest = (earliest == self) ? fromDate : self
 
         let allComponents: Set<Calendar.Component> = [.minute, .hour, .day, .weekOfYear, .month, .year, .second]
-        let components:DateComponents = Calendar.current.dateComponents(allComponents, from: earliest, to: latest)
+        let components: DateComponents = Calendar.current.dateComponents(allComponents, from: earliest, to: latest)
         let year = components.year  ?? 0
         let month = components.month  ?? 0
         let week = components.weekOfYear  ?? 0
@@ -91,12 +91,9 @@ extension Date {
         let second = components.second ?? 0
 
         let descendingComponents = ["year": year, "month": month, "week": week, "day": day, "hour": hour, "minute": minute, "second": second]
-        for (period, timeAgo) in descendingComponents {
-            if timeAgo > 0 {
+        for (period, timeAgo) in descendingComponents where (timeAgo > 0) {
                 return "\(timeAgo.of(period)) ago"
-            }
         }
-
         return "Just now"
     }
 }

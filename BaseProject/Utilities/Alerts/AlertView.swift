@@ -8,11 +8,9 @@
 import Foundation
 import UIKit
 
-
-
-/// Responsiblities
-/// - Show Alerts on root view controller.
-/// - Accessible throught the codebase.
+// Responsiblities
+// - Show Alerts on root view controller.
+// - Accessible throught the codebase.
 class Alert {
     class func showOkayAlert(title: String, message: String) {
 //        if let rootViewController = AppDelegate.sharedDelegate().getRootViewController() {
@@ -25,4 +23,3 @@ class Alert {
 //        }
     }
 }
-

@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import UIKit
 
 class AlertManager {
     class func showOkayAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
@@ -27,7 +26,7 @@ class AlertManager {
 //        }
     }
 
-    class func showDestrictiveAlert(title: String, message: String, destructiveButtonTitle: String, destructiveButtonAction: @escaping () -> ()) {
+    class func showDestrictiveAlert(title: String, message: String, destructiveButtonTitle: String, destructiveButtonAction: @escaping () -> Void) {
 //        if let rootViewController = AppDelegate.sharedDelegate().getRootViewController() {
 //            let destructiveAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 //
@@ -50,4 +49,3 @@ class AlertManager {
         debugLog(logType: .warning, anyObject: nil, text: "Root view controller not found.")
     }
 }
-
