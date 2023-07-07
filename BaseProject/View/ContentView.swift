@@ -7,11 +7,12 @@
 
 import SwiftUI
 import CocoaDebug
+import UIKit
 
 struct ContentView: View {
     // MARK: - Properties
     @EnvironmentObject var settings: UserSettings
-    let  userListViewModel = UserListViewModel(networkManager: NetworkManager())
+  @StateObject var userListViewModel = UserListViewModel(networkManager: NetworkManager())
 
     // MARK: - Body
     var body: some View {
@@ -31,12 +32,16 @@ struct ContentView: View {
                     }
                 }
             }
+            .alert(userListViewModel.errorMeassage ?? "", isPresented: $userListViewModel.showAlert) {
+                       Button("OK", role: .cancel) { }
+                   }
         }.navigationTitle(LocalizationConstant.Common.users.localized(settings.lang))
             .onAppear {
                 print(Localize.currentLanguage())
                 getUserList()
             }
     }
+
     // MARK: - Private Method
     private func getUserList() {
         userListViewModel.getUserList(completionHandler: { result in
@@ -47,11 +52,11 @@ struct ContentView: View {
             case .failure(let failure):
                 if let failure = failure.errorDescription {
                     print(failure)
-                }
-
-            }
-
-        })
+                    DispatchQueue.main.async {
+                        userListViewModel.errorMeassage = failure
+                    }
+                    }
+            }})
     }
 }
 

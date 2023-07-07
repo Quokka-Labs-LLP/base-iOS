@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SystemConfiguration
+import UIKit
 
 class NetworkManager: HTTPClient {
     // MARK: - Properties
@@ -19,6 +21,7 @@ class NetworkManager: HTTPClient {
     }
     // MARK: - Methods
     func fetchData(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
+        
         guard let urlRequest = request.urlRequest(with: basePath ) else {
             failure(nil, nil, .badRequest)
             return
@@ -26,6 +29,8 @@ class NetworkManager: HTTPClient {
 
         debugLog(logType: .info, anyObject: urlRequest, text: "Initiating URL Request")
         session.dataTask(with: urlRequest) { data, response, error in
+
+
 //            if let error = error {
 //                failure(nil, nil, .failed(message: error.localizedDescription))
 //                return
@@ -86,7 +91,14 @@ class NetworkManager: HTTPClient {
                                  basePath: String,
                                  decodableModelType: T.Type,
                                  completion: @escaping ((Result<T, NetworkError>) -> Void)) {
+        if Reachability.isConnectedToNetwork() {
+            print("Internet Connection Available!")
+        } else {
+            print("Internet Connection not Available!")
+            completion(.failure(.failed(message: "Internet Connection not Available!")))
 
+            return
+        }
         self.fetch(request, basePath: basePath) { data, _ in
             do {
                 let decodedObject: GeneralNetworkModel<T> = try JSONDecoder().decode(GeneralNetworkModel.self, from: data)
@@ -153,4 +165,99 @@ struct VLParticipantDetails: Decodable {
     var participantName: String
     var participantPhoneNo: Int
     var userType: String
+}
+
+
+
+//class Reachability {
+//    var hostname: String?
+//    var isRunning = false
+//    var isReachableOnWWAN: Bool
+//    var reachability: SCNetworkReachability?
+//    var reachabilityFlags = SCNetworkReachabilityFlags()
+//    let reachabilitySerialQueue = DispatchQueue(label: "ReachabilityQueue")
+//    init(hostname: String) throws {
+//        guard let reachability = SCNetworkReachabilityCreateWithName(nil, hostname) else {
+//            throw Network.Error.failedToCreateWith(hostname)
+//        }
+//        self.reachability = reachability
+//        self.hostname = hostname
+//        isReachableOnWWAN = true
+//        try start()
+//    }
+//    init() throws {
+//        var zeroAddress = sockaddr_in()
+//        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+//        zeroAddress.sin_family = sa_family_t(AF_INET)
+//        guard let reachability = withUnsafePointer(to: &zeroAddress, {
+//            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+//                SCNetworkReachabilityCreateWithAddress(nil, $0)
+//            }
+//        }) else {
+//            throw Network.Error.failedToInitializeWith(zeroAddress)
+//        }
+//        self.reachability = reachability
+//        isReachableOnWWAN = true
+//        try start()
+//    }
+//    var status: Network.Status {
+//        return  !isConnectedToNetwork ? .unreachable :
+//                isReachableViaWiFi    ? .wifi :
+//                isRunningOnDevice     ? .wwan : .unreachable
+//    }
+//    var isRunningOnDevice: Bool = {
+//        #if targetEnvironment(simulator)
+//            return false
+//        #else
+//            return true
+//        #endif
+//    }()
+//    deinit { stop() }
+//}
+//struct Network {
+//    static var reachability: Reachability!
+//    enum Status: String {
+//        case unreachable, wifi, wwan
+//    }
+//    enum Error: Swift.Error {
+//        case failedToSetCallout
+//        case failedToSetDispatchQueue
+//        case failedToCreateWith(String)
+//        case failedToInitializeWith(sockaddr_in)
+//    }
+//}
+public class Reachability {
+    
+    class func isConnectedToNetwork() -> Bool {
+        
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+            return false
+        }
+        
+        /* Only Working for WIFI
+         let isReachable = flags == .reachable
+         let needsConnection = flags == .connectionRequired
+         
+         return isReachable && !needsConnection
+         */
+        
+        // Working for Cellular and WIFI
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        let ret = (isReachable && !needsConnection)
+        
+        return ret
+        
+    }
 }

@@ -12,6 +12,8 @@ import CocoaDebug
 class UserListViewModel: ObservableObject {
    // MARK: - Published
     @Published var userData: UserListModel?
+    @Published var showAlert: Bool = false
+    @Published var errorMeassage: String?
     private var networkManager: NetworkManager
 
         public init(networkManager: NetworkManager) {
@@ -23,7 +25,9 @@ class UserListViewModel: ObservableObject {
         let request = HTTPRequest(get: EndpointProvider.userList.value, headers: [:])
         networkManager.fetchJSON(request, basePath: "dummyjson.com", decodableModelType: UserListModel.self) { result in
                print(result)
+             
                completionHandler(result)
            }
        }
+    
 }

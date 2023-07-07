@@ -1,0 +1,20 @@
+PODS:
+  - CocoaDebug (1.7.7)
+  - SwiftLint (0.52.2)
+
+DEPENDENCIES:
+  - CocoaDebug
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - CocoaDebug
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  CocoaDebug: b38d31464b91a9775928f8667d114db07b136565
+  SwiftLint: 1ac76dac888ca05cb0cf24d0c85887ec1209961d
+
+PODFILE CHECKSUM: 586d38c8783b4c8cadcbb2881a4902f7d9aeece4
+
+COCOAPODS: 1.12.1
