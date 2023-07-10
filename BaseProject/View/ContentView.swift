@@ -12,7 +12,7 @@ import UIKit
 struct ContentView: View {
     // MARK: - Properties
     @EnvironmentObject var settings: UserSettings
-  @StateObject var userListViewModel = UserListViewModel(networkManager: NetworkManager())
+  @StateObject var userListViewModel = UserListViewModel()
 
     // MARK: - Body
     var body: some View {
@@ -38,25 +38,14 @@ struct ContentView: View {
         }.navigationTitle(LocalizationConstant.Common.users.localized(settings.lang))
             .onAppear {
                 print(Localize.currentLanguage())
-                getUserList()
+                apiRun()
+
             }
     }
-
     // MARK: - Private Method
-    private func getUserList() {
-        userListViewModel.getUserList(completionHandler: { result in
-            switch result {
-            case .success(let response):
-                userListViewModel.userData = response
-                print(response)
-            case .failure(let failure):
-                if let failure = failure.errorDescription {
-                    print(failure)
-                    DispatchQueue.main.async {
-                        userListViewModel.errorMeassage = failure
-                    }
-                    }
-            }})
+    private func apiRun() {
+        userListViewModel.getUserList()
+        userListViewModel.postApi()
     }
 }
 

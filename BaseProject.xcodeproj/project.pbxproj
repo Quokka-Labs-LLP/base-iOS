@@ -82,6 +82,9 @@
 		49F0EE6D2A2F54D90091391C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EE6C2A2F54D90091391C /* Preview Assets.xcassets */; };
 		682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */; };
 		A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935B2A45B46C00A4601C /* ProfileView.swift */; };
+		A31788292A5BE45B00A39361 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31788282A5BE45B00A39361 /* NetworkReachability.swift */; };
+		A317882B2A5BE69C00A39361 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317882A2A5BE69C00A39361 /* NetworkHandler.swift */; };
+		A317882D2A5BF03500A39361 /* ErrorCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = A317882C2A5BF03500A39361 /* ErrorCode.plist */; };
 		A33855062A494E89005A0A9E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33855052A494E89005A0A9E /* UserListViewModel.swift */; };
 		A344648A2A4EEDB800280C9D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34464892A4EEDB800280C9D /* Localize.swift */; };
 		A386DBD42A552E320097496D /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386DBD32A552E320097496D /* DropdownView.swift */; };
@@ -169,6 +172,9 @@
 		49F0EE6C2A2F54D90091391C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A1708B968689C6A2E7B7FB7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A30E935B2A45B46C00A4601C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A31788282A5BE45B00A39361 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		A317882A2A5BE69C00A39361 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		A317882C2A5BF03500A39361 /* ErrorCode.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ErrorCode.plist; sourceTree = "<group>"; };
 		A33855052A494E89005A0A9E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		A34464892A4EEDB800280C9D /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		A344648B2A4EEDDF00280C9D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -323,6 +329,7 @@
 				495C823A2A31F1B100415440 /* NetworkError.swift */,
 				495C82392A31F1B100415440 /* URLSessionFactory.swift */,
 				495C82382A31F1B100415440 /* URLSessionProtocol.swift */,
+				A31788282A5BE45B00A39361 /* NetworkReachability.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -388,6 +395,8 @@
 				49A8DAE72A30A6F900D7E1D6 /* ErrorHandler.swift */,
 				495C82472A31F21900415440 /* GeneralNetworkModel.swift */,
 				495C822D2A31ED0A00415440 /* AppEnvironment.swift */,
+				A317882A2A5BE69C00A39361 /* NetworkHandler.swift */,
+				A317882C2A5BF03500A39361 /* ErrorCode.plist */,
 			);
 			path = NetworkHandler;
 			sourceTree = "<group>";
@@ -747,6 +756,7 @@
 				49A8DB1E2A30AC5F00D7E1D6 /* OpenSans-ExtraBold.ttf in Resources */,
 				495C82242A31E3AD00415440 /* Localizable.strings in Resources */,
 				49A8DB042A30A80500D7E1D6 /* ActivityView.xib in Resources */,
+				A317882D2A5BF03500A39361 /* ErrorCode.plist in Resources */,
 				49A8DB1F2A30AC5F00D7E1D6 /* OpenSans-Light.ttf in Resources */,
 				49F0EE6A2A2F54D90091391C /* Assets.xcassets in Resources */,
 				49A8DB222A30AC5F00D7E1D6 /* OpenSans-Regular.ttf in Resources */,
@@ -868,6 +878,7 @@
 				49A8DB3C2A30B20100D7E1D6 /* UINavigationController+Extension.swift in Sources */,
 				495C82162A31C11C00415440 /* CustomLabelWithImage.swift in Sources */,
 				49A8DB2B2A30AD0100D7E1D6 /* CoreDataManager.swift in Sources */,
+				A31788292A5BE45B00A39361 /* NetworkReachability.swift in Sources */,
 				495C820C2A31C11C00415440 /* CapsuleButtonStyle.swift in Sources */,
 				495C820F2A31C11C00415440 /* Checkbox.swift in Sources */,
 				49A8DAFF2A30A80500D7E1D6 /* AlertManager.swift in Sources */,
@@ -889,6 +900,7 @@
 				495C822E2A31ED0A00415440 /* AppEnvironment.swift in Sources */,
 				49F0EE662A2F54D10091391C /* BaseProjectApp.swift in Sources */,
 				49A8DADC2A309C9A00D7E1D6 /* UserSessionManager.swift in Sources */,
+				A317882B2A5BE69C00A39361 /* NetworkHandler.swift in Sources */,
 				495C82112A31C11C00415440 /* CustomImage.swift in Sources */,
 				49A8DB002A30A80500D7E1D6 /* AlertView.swift in Sources */,
 				49A8DAE82A30A6F900D7E1D6 /* ErrorHandler.swift in Sources */,

@@ -10,24 +10,38 @@ import SwiftUI
 import CocoaDebug
 
 class UserListViewModel: ObservableObject {
-   // MARK: - Published
+
+    // MARK: - Published
     @Published var userData: UserListModel?
     @Published var showAlert: Bool = false
     @Published var errorMeassage: String?
-    private var networkManager: NetworkManager
+    private var networkHandler = NetworkHandler(networkManager: NetworkManager())
 
-        public init(networkManager: NetworkManager) {
-            self.networkManager = networkManager
-        }
     // MARK: - Method
-    func getUserList( completionHandler: @escaping (Result<UserListModel, NetworkError>) -> Void) {
-//        _ = HTTPRequestBody(contentDic: [:], type: .urlEncoded)
-        let request = HTTPRequest(get: EndpointProvider.userList.value, headers: [:])
-        networkManager.fetchJSON(request, basePath: "dummyjson.com", decodableModelType: UserListModel.self) { result in
-               print(result)
-             
-               completionHandler(result)
-           }
-       }
-    
+    func getUserList() {
+        networkHandler.getUserList(completionHandler: { data, error in
+            print("")
+            if data != nil && error == nil {
+                self.userData = data
+            } else {
+                DispatchQueue.main.async {
+                    self.errorMeassage = error
+                    self.showAlert = true
+                }
+            }
+        })
+    }
+    func postApi() {
+        networkHandler.postApi(completionHandler: { data, error in
+            print("")
+            if data != nil && error == nil {
+                self.userData = data
+            } else {
+                DispatchQueue.main.async {
+                    self.errorMeassage = error
+                    self.showAlert = true
+                }
+            }
+        })
+    }
 }

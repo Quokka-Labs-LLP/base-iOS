@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>ErrorCode</key>
+        <array>
+            <dict>
+                <key>Code</key>
+                <integer>200</integer>
+                <key>Message</key>
+                <string>You are not authorised to request this data.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1000</integer>
+                <key>Message</key>
+                <string>You are not authorised to request this data.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1001</integer>
+                <key>Message</key>
+                <string>User account with this phone number already exists.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>1002</real>
+                <key>Message</key>
+                <string>The sever refused our request.Incorrect or missing parameters.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>1003</real>
+                <key>Message</key>
+                <string>Server Errror Please try again.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1004</integer>
+                <key>Message</key>
+                <string>Please check email or password mismatch.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>250</integer>
+                <key>Message</key>
+                <string>Please try again later. Something went wrong.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1005</integer>
+                <key>Message</key>
+                <string>Please verify your Account.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1006</integer>
+                <key>Message</key>
+                <string>Please check  OTP is not correct.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1007</integer>
+                <key>Message</key>
+                <string>User could not be created.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1008</integer>
+                <key>Message</key>
+                <string>Please check something is not right!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1011</integer>
+                <key>Message</key>
+                <string>Please check this request does&apos;nt exist.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1013</integer>
+                <key>Message</key>
+                <string>Our service request failed due to a server error. Sorry about that.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>1016</real>
+                <key>Message</key>
+                <string>Please try again later. The content you are trying to access is not available.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1017</integer>
+                <key>Message</key>
+                <string>Token does&apos;nt match.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1018</integer>
+                <key>Message</key>
+                <string>please check your request paramater.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1019</integer>
+                <key>Message</key>
+                <string>Please check this Book already added in wishlist!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1020</integer>
+                <key>Message</key>
+                <string>This and all future requests should be directed to the other url</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1021</integer>
+                <key>Message</key>
+                <string>The requested page has moved temporarily to a new url.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1022</integer>
+                <key>Message</key>
+                <string>You have already reviewed the book! </string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1023</integer>
+                <key>Message</key>
+                <string>User has not reviewed the book.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>1024</integer>
+                <key>Message</key>
+                <string>Book doesn&apos;t exist which is request you.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>405</integer>
+                <key>Message</key>
+                <string>The method specified in the request is not allowed.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>406</integer>
+                <key>Message</key>
+                <string>The server can only generate a response that is not accepted by the client.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>410</integer>
+                <key>Message</key>
+                <string>The requested page is no longer available .</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>411</integer>
+                <key>Message</key>
+                <string>The &quot;Content-Length&quot; is not defined. The server will not accept the request without it.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>412</integer>
+                <key>Message</key>
+                <string>The pre condition given in the request evaluated to false by the server.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>413</integer>
+                <key>Message</key>
+                <string>The server will not accept the request, because the request entity is too large.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>414</integer>
+                <key>Message</key>
+                <string>The server will not accept the request, because the url is too long. Occurs when you convert a &quot;post&quot; request to a &quot;get&quot; request with a long query information .</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>415</integer>
+                <key>Message</key>
+                <string>The server will not accept the request, because the mediatype is not supported.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>416</integer>
+                <key>Message</key>
+                <string>The requested byte range is not available and is out of bounds.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>417</integer>
+                <key>Message</key>
+                <string>The expectation given in an Expect request-header field could not be met by this server.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>418</integer>
+                <key>Message</key>
+                <string>I&apos;m a teapot.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>422</integer>
+                <key>Message</key>
+                <string>The request was well-formed but was unable to be followed due to semantic errors</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>422</integer>
+                <key>Message</key>
+                <string>The request was well-formed but was unable to be followed due to semantic errors</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>501</integer>
+                <key>Message</key>
+                <string>The request was not completed. The server received an invalid response from the upstream server.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>502</integer>
+                <key>Message</key>
+                <string>The request was not completed. The server received an invalid response from the upstream server.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>1001</real>
+                <key>Message</key>
+                <string>The request timed out.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>0</integer>
+                <key>Message</key>
+                <string></string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2000</integer>
+                <key>Message</key>
+                <string>log</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2001</integer>
+                <key>Message</key>
+                <string>Data not found.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>907</integer>
+                <key>Message</key>
+                <string>User Payment sheet cancelled.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>500</integer>
+                <key>Message</key>
+                <string>User indentity not found.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>304</integer>
+                <key>Message</key>
+                <string>Server Error.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>404</integer>
+                <key>Message</key>
+                <string>Data not found.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>2003</real>
+                <key>Message</key>
+                <string>Data get successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>2004</real>
+                <key>Message</key>
+                <string>Data created successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2005</integer>
+                <key>Message</key>
+                <string>Data updated successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2006</integer>
+                <key>Message</key>
+                <string> Data deleted successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2007</integer>
+                <key>Message</key>
+                <string>Status changed successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2008</integer>
+                <key>Message</key>
+                <string>Something went wrong! Try again later.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2011</integer>
+                <key>Message</key>
+                <string></string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2013</integer>
+                <key>Message</key>
+                <string>Mark book as finished!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <real>2016</real>
+                <key>Message</key>
+                <string>Book already in library!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2009</integer>
+                <key>Message</key>
+                <string>User Logout Successfully.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2010</integer>
+                <key>Message</key>
+                <string>Book added on wishlist!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2012</integer>
+                <key>Message</key>
+                <string>Thank You Review added!.</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2013</integer>
+                <key>Message</key>
+                <string>Mark book as finished!</string>
+            </dict>
+            <dict>
+                <key>Code</key>
+                <integer>2014</integer>
+                <key>Message</key>
+                <string>Book already marks as finished!</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
