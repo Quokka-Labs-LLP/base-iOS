@@ -20,6 +20,39 @@ class NetworkManager: HTTPClient {
         self.service = service
     }
     // MARK: - Methods
+
+    func uploadImageToServer(_ parameter: [String: String], basePath: String, imageData: UIImage?, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
+       let parameters = parameter
+       guard let mediaImage = Media(withImage: UIImage(), forKey: "image") else { return }
+       guard let url = URL(string: basePath) else { return }
+       var request = URLRequest(url: url)
+       request.httpMethod = "POST"
+       // create boundary
+       let boundary = generateBoundary()
+       // set content type
+       request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+       // call createDataBody method
+       let dataBody = createDataBody(withParameters: parameters, media: [mediaImage], boundary: boundary)
+       request.httpBody = dataBody
+       let session = URLSession.shared
+       session.dataTask(with: request) { (data, response, error) in
+          if let response = response as? HTTPURLResponse {
+             print(response)
+
+          }
+          if let data = data {
+             do {
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+                 success(data, response)
+             } catch {
+                print(error)
+
+             }
+          }
+       }.resume()
+    }
+
     func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) {
         if NetworkReachability.isConnectedToNetwork() {
             debugPrint("Internet Connection Available!")
@@ -108,7 +141,6 @@ extension NetworkManager {
         var plistData: [String: Any] = [:] // Our data
 
         do {
-
             // convert the data to a dictionary and handle errors
         plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as? [String: Any] ?? [:]
 
@@ -127,5 +159,39 @@ extension NetworkManager {
         debugPrint("Error While Creating a Error message from status code")
         return ""
     }
+    func createDataBody(withParameters params: [String: String]?, media: [Media]?, boundary: String) -> Data {
+       let lineBreak = "\r\n"
+       var body = Data()
+       if let parameters = params {
+          for (key, value) in parameters {
+             body.append("--\(boundary + lineBreak)")
+             body.append("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
+              body.append("\(value + lineBreak)")
+          }
+       }
+       if let media = media {
+          for photo in media {
+             body.append("--\(boundary + lineBreak)")
+             body.append("Content-Disposition: form-data; name=\"\(photo.key)\"; filename=\"\(photo.filename)\"\(lineBreak)")
+             body.append("Content-Type: \(photo.mimeType + lineBreak + lineBreak)")
+             body.append(photo.data)
+             body.append(lineBreak)
+          }
+       }
+       body.append("--\(boundary)--\(lineBreak)")
+       return body
+    }
+    func generateBoundary() -> String {
+       return "Boundary-\(NSUUID().uuidString)"
+    }
 
+}
+
+extension Data {
+   mutating func append(_ string: String) {
+      if let data = string.data(using: .utf8) {
+         append(data)
+         print("data======>>>", data)
+      }
+   }
 }

@@ -35,8 +35,9 @@ class NetworkHandler {
             }
            }
        }
+
     func postApi( completionHandler: @escaping((_ data: UserListModel?, _ error: String?) -> Void)) {
-        let param: [String: String] = ["title": "news"]
+        let param: [String: String] = ["title": "mac"]
         guard let requestBody = HTTPRequestBody(contentDic: param, type: .urlEncoded) else { return  }
         
         let request = HTTPRequest(post: EndpointProvider.addProduct.value, body: requestBody)
@@ -56,5 +57,14 @@ class NetworkHandler {
             }
            }
        }
+    func uploadData( completionHandler: @escaping((_ data: UserListModel?, _ error: String?) -> Void)) {
+        let param: [String: String] = ["title": "mac"]
 
+        networkManager.uploadImageToServer( param, basePath: EndpointProvider.getBaseUrl(), imageData: UIImage(), success: { _, _ in
+            completionHandler(nil, "")
+        }, failure: { _, _, _ in
+            completionHandler(nil, "")
+
+        })
+       }
 }

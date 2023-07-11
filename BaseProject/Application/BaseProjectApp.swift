@@ -12,8 +12,8 @@ struct BaseProjectApp: App {
    @ObservedObject var settings = UserSettings()
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
+            NavigationStack {
+                UserListView()
                     .onAppear {
                         debugPrint("Debug message 1")
                         enableCocoaDebugSeetting()

@@ -26,13 +26,26 @@ class UserListViewModel: ObservableObject {
             } else {
                 DispatchQueue.main.async {
                     self.errorMeassage = error
-                    self.showAlert = true
+//                    self.showAlert = true
                 }
             }
         })
     }
     func postApi() {
         networkHandler.postApi(completionHandler: { data, error in
+            print("")
+            if data != nil && error == nil {
+                self.userData = data
+            } else {
+                DispatchQueue.main.async {
+                    self.errorMeassage = error
+//                    self.showAlert = true
+                }
+            }
+        })
+    }
+    func uploadData() {
+        networkHandler.uploadData(completionHandler: { data, error in
             print("")
             if data != nil && error == nil {
                 self.userData = data

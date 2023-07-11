@@ -48,7 +48,7 @@ struct DropdownView: View {
     func changeLanguage(index: Int) {
         switch languageOption[index] {
         case "English":
-            self.settings.lang = LanguageOption.base.rawValue
+            self.settings.lang = LanguageOption.english.rawValue
         case "Arabic":
             self.settings.lang = LanguageOption.arabic.rawValue
         default:

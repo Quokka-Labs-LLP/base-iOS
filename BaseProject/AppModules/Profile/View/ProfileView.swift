@@ -13,9 +13,10 @@ struct ProfileView: View {
     @EnvironmentObject var settings: UserSettings
 
     @State var isPresented: Bool = false
-
+    @Binding var urlString: URL
     // MARK: - Body
     var body: some View {
+        VStack {
         Image(systemName: "person.circle.fill")
             .resizable()
             .frame(width: 100, height: 100)
@@ -29,18 +30,18 @@ struct ProfileView: View {
         Text("john@gmail.com")
             .foregroundColor(.black)
             .contextMenu {
-                    Button {
-                        print("Change country setting")
-                    } label: {
-                        Label("Choose Country", systemImage: "globe")
-                    }
-
-                    Button {
-                        print("Enable geolocation")
-                    } label: {
-                        Label("Detect Location", systemImage: "location.circle")
-                    }
+                Button {
+                    print("Change email")
+                } label: {
+                    Label("Change email", systemImage: "globe")
                 }
+
+                Button {
+                    print("Edit email")
+                } label: {
+                    Label("Edit email", systemImage: "location.circle")
+                }
+            }
         List {
             Text(LocalizationConstant.Common.apiLogs.localized(settings.lang))
                 .foregroundColor(.black)
@@ -48,13 +49,26 @@ struct ProfileView: View {
                     isPresented = true
                 })
             DropdownView()
-        }.shadow(radius: 10)
+        }
+        .shadow(radius: 10)
+        }
+        .background(AsyncImage(url: urlString) { image in
+                            image
+                                .resizable()
+                                .aspectRatio( contentMode: .fill)
+                            .edgesIgnoringSafeArea(.all)
 
-    }
-}
+                        } placeholder: {
+                            Image(systemName: "photo")
+                                .imageScale(.large)
+                                .frame(width: 110, height: 110)
+
+                        })
+    }}
 
 struct ProfileView_Previews: PreviewProvider {
+    @State static var url = URL(string: "")!
     static var previews: some View {
-        ProfileView()
+        ProfileView(urlString: $url)
     }
 }
