@@ -87,6 +87,7 @@
 		A317882D2A5BF03500A39361 /* ErrorCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = A317882C2A5BF03500A39361 /* ErrorCode.plist */; };
 		A33855062A494E89005A0A9E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33855052A494E89005A0A9E /* UserListViewModel.swift */; };
 		A344648A2A4EEDB800280C9D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34464892A4EEDB800280C9D /* Localize.swift */; };
+		A3587D8B2A5E826000DBD3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3587D8A2A5E826000DBD3E4 /* AppDelegate.swift */; };
 		A386DBD42A552E320097496D /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386DBD32A552E320097496D /* DropdownView.swift */; };
 		A3BC72F52A496E4500053904 /* UserListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC72F42A496E4500053904 /* UserListModal.swift */; };
 		A3C9E6852A5D451500EBAAC1 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C9E6842A5D451500EBAAC1 /* Media.swift */; };
@@ -179,6 +180,8 @@
 		A33855052A494E89005A0A9E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		A34464892A4EEDB800280C9D /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		A344648B2A4EEDDF00280C9D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A3587D8A2A5E826000DBD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3587D8D2A5E90B000DBD3E4 /* BaseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaseProject.entitlements; sourceTree = "<group>"; };
 		A386DBD32A552E320097496D /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		A3BC72F42A496E4500053904 /* UserListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModal.swift; sourceTree = "<group>"; };
 		A3C9E6842A5D451500EBAAC1 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
@@ -384,6 +387,7 @@
 			children = (
 				495C822F2A31EE8400415440 /* Info.plist */,
 				49F0EE652A2F54D10091391C /* BaseProjectApp.swift */,
+				A3587D8A2A5E826000DBD3E4 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -607,6 +611,7 @@
 		49F0EE642A2F54D10091391C /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				A3587D8D2A5E90B000DBD3E4 /* BaseProject.entitlements */,
 				4948F09B2A330C1D006D2498 /* GoogleServicesSetup */,
 				495C821F2A31E29A00415440 /* Localization */,
 				49A8DB342A30AEA000D7E1D6 /* ReusableComponents */,
@@ -705,6 +710,7 @@
 				4948F09A2A330B79006D2498 /* Firebase Setup Run Script */,
 				D3B492196BB0273F5A306D06 /* [CP] Embed Pods Frameworks */,
 				A34D84052A4AE5AD00E6B291 /* ShellScript */,
+				A3587D8C2A5E88C500DBD3E4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -812,6 +818,25 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		A3587D8C2A5E88C500DBD3E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		BB86B86FE87B0A7BBFF41278 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -900,6 +925,7 @@
 				495C82462A31F1B100415440 /* HTTPResponseBody.swift in Sources */,
 				495C82282A31E7C100415440 /* Date+Extension.swift in Sources */,
 				49F0EE682A2F54D10091391C /* UserListView.swift in Sources */,
+				A3587D8B2A5E826000DBD3E4 /* AppDelegate.swift in Sources */,
 				49A8DB3A2A30B19700D7E1D6 /* ToastView.swift in Sources */,
 				495C82402A31F1B100415440 /* HTTPRequest.swift in Sources */,
 				A3C9E6852A5D451500EBAAC1 /* Media.swift in Sources */,
@@ -1068,15 +1094,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BaseProject/BaseProject.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BaseProject/Preview Content\"";
-				DEVELOPMENT_TEAM = MRQUCVT2BB;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8SZ27954MH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseProject/Application/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1090,6 +1119,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.baseproject.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Base Structure";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1102,15 +1132,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BaseProject/BaseProject.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BaseProject/Preview Content\"";
-				DEVELOPMENT_TEAM = MRQUCVT2BB;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8SZ27954MH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseProject/Application/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1124,6 +1156,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.baseproject.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Base Structure";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

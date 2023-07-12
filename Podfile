@@ -7,5 +7,7 @@ target 'BaseProject' do
 
   # Pods for BaseProject
   pod 'SwiftLint'
+  pod 'FirebaseCrashlytics'
+  pod 'FirebaseDynamicLinks'
   pod 'CocoaDebug', :configurations => ['Debug']
 end

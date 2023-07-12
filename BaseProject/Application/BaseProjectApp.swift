@@ -9,7 +9,9 @@ import SwiftUI
 import CocoaDebug
 @main
 struct BaseProjectApp: App {
-   @ObservedObject var settings = UserSettings()
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @ObservedObject var settings = UserSettings()
     var body: some Scene {
         WindowGroup {
             NavigationStack {
@@ -19,7 +21,9 @@ struct BaseProjectApp: App {
                         enableCocoaDebugSeetting()
                     }
             }.environmentObject(settings)
-
+                .onOpenURL(perform: {_ in 
+                    print("link")
+                })
         }
     }
 

@@ -73,6 +73,7 @@ struct UserListView: View {
         }.navigationTitle(LocalizationConstant.Common.users.localized(settings.lang))
             .onAppear {
                 apiRun()
+//                fatalError("Crash was triggered")
             }
     }
     // MARK: - Private Method
