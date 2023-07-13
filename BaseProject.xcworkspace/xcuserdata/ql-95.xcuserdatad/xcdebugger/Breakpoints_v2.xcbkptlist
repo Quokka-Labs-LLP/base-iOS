@@ -87,54 +87,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7554FD7D-E4C1-47AB-AA83-23CF264E2835"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BaseProject/NetworkHandler/NetworkHandler.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "postApi(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FB1B473D-6C63-4396-9295-BA48535B2A94"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BaseProject/NetworkHandler/NetworkHandler.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "postApi(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A89C2F7F-E0BC-4249-8E84-BD177426CCDB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BaseProject/NetworkHandler/NetworkHandler.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "postApi(completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1B711F60-8EAD-409F-88AB-B519E28E6261"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -248,7 +200,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6A1C4454-B31C-42C8-B4BE-D4CD494728CB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BaseProject/AppModules/Profile/View/UserListView.swift"
@@ -263,49 +215,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "03CC8DF2-8FF5-4881-9C06-D856EA463A34"
+            uuid = "AD4D989C-925A-442B-B04A-41AC9BBE0A42"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BaseProject/Application/BaseProjectApp.swift"
+            filePath = "BaseProject/Application/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "03CC8DF2-8FF5-4881-9C06-D856EA463A34 - e5b4ebfea0640370"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onOpenURL(perform: (Foundation.URL) -&gt; ()) -&gt; some&gt;&gt;.0 in BaseProject.BaseProjectApp.body.getter : some"
-                  moduleName = "BaseProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/BaseProject/Application/BaseProjectApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "569">
-               </Location>
-               <Location
-                  uuid = "03CC8DF2-8FF5-4881-9C06-D856EA463A34 - 21bc8730520a8c1a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Foundation.URL) -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onOpenURL(perform: (Foundation.URL) -&gt; ()) -&gt; some&gt;&gt;.0 in BaseProject.BaseProjectApp.body.getter : some"
-                  moduleName = "BaseProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ql-95/Documents/OfficeProjects/Base_Struct_Ios/base/base-iOS/BaseProject/Application/BaseProjectApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "messaging(_:didReceiveRegistrationToken:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

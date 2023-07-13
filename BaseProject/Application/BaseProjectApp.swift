@@ -6,19 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
 import CocoaDebug
 @main
 struct BaseProjectApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @ObservedObject var settings = UserSettings()
+//    init() {
+//            PushNotificationManager.shared.registerForPushNotifications()
+//        }
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 UserListView()
                     .onAppear {
                         debugPrint("Debug message 1")
-                        enableCocoaDebugSeetting()
+//                        enableCocoaDebugSeetting()
                     }
             }.environmentObject(settings)
                 .onOpenURL(perform: {_ in 
@@ -36,3 +40,4 @@ struct BaseProjectApp: App {
         debugPrint("Debug message 2")
     }
 }
+
