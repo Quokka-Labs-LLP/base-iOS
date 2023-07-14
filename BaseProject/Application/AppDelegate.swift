@@ -7,8 +7,7 @@
 
 import Foundation
 import UIKit
-//import FirebaseCore
-//import FirebaseCrashlytics
+import FirebaseCrashlytics
 import FirebaseMessaging
 import Firebase
 import UserNotifications

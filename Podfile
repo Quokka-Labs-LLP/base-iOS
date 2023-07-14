@@ -14,3 +14,6 @@ target 'BaseProject' do
   pod 'FirebaseMessaging'
   pod 'CocoaDebug'
 end
+target 'BaseProjectTests' do
+#  pod 'Firebase'
+end
