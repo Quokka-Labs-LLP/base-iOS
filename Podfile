@@ -12,5 +12,5 @@ target 'BaseProject' do
   pod 'FirebaseCore'
   pod 'Firebase'
   pod 'FirebaseMessaging'
-  pod 'CocoaDebug', :configurations => ['Debug']
+  pod 'CocoaDebug'
 end

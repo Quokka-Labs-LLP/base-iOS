@@ -23,7 +23,6 @@
 		495C82172A31C11C00415440 /* CustomInviteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C82072A31C11C00415440 /* CustomInviteLabel.swift */; };
 		495C82182A31C11C00415440 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C82082A31C11C00415440 /* CustomLabel.swift */; };
 		495C82192A31C11C00415440 /* RoundCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C820A2A31C11C00415440 /* RoundCornerShape.swift */; };
-		495C821C2A31DEA200415440 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 495C821B2A31DEA200415440 /* Lottie */; };
 		495C821E2A31DF6700415440 /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C821D2A31DF6700415440 /* FontWeight.swift */; };
 		495C82212A31E2B500415440 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C82202A31E2B500415440 /* Localization.swift */; };
 		495C82242A31E3AD00415440 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495C82262A31E3AD00415440 /* Localizable.strings */; };
@@ -80,7 +79,6 @@
 		49F0EE682A2F54D10091391C /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0EE672A2F54D10091391C /* UserListView.swift */; };
 		49F0EE6A2A2F54D90091391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EE692A2F54D90091391C /* Assets.xcassets */; };
 		49F0EE6D2A2F54D90091391C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EE6C2A2F54D90091391C /* Preview Assets.xcassets */; };
-		682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */; };
 		A301BB3B2A602875006E6871 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301BB3A2A602875006E6871 /* PushNotificationManager.swift */; };
 		A30E935C2A45B46C00A4601C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E935B2A45B46C00A4601C /* ProfileView.swift */; };
 		A31788292A5BE45B00A39361 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31788282A5BE45B00A39361 /* NetworkReachability.swift */; };
@@ -90,7 +88,9 @@
 		A344648A2A4EEDB800280C9D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34464892A4EEDB800280C9D /* Localize.swift */; };
 		A3587D8B2A5E826000DBD3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3587D8A2A5E826000DBD3E4 /* AppDelegate.swift */; };
 		A386DBD42A552E320097496D /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386DBD32A552E320097496D /* DropdownView.swift */; };
-		A3B8BBA02A601AF30077D950 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B8BB9F2A601AF30077D950 /* GoogleService-Info.plist */; };
+		A39D9CDA2A610FEA003A00FD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */; };
+		A39D9CE32A611326003A00FD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A39D9CE22A611326003A00FD /* Lottie */; };
+		A39D9CE72A611628003A00FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39D9CE62A611628003A00FD /* GoogleService-Info.plist */; };
 		A3BC72F52A496E4500053904 /* UserListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC72F42A496E4500053904 /* UserListModal.swift */; };
 		A3C9E6852A5D451500EBAAC1 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C9E6842A5D451500EBAAC1 /* Media.swift */; };
 /* End PBXBuildFile section */
@@ -99,7 +99,6 @@
 		0738FB3CC6D6F4A9856832F0 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		2768C355C39AFE1E9F992F10 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492593392A3C3BE4002F2937 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
-		4948F09E2A330C89006D2498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		495C81F32A31C11C00415440 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
 		495C81F42A31C11C00415440 /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
 		495C81F52A31C11C00415440 /* NavigationBarButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonStyle.swift; sourceTree = "<group>"; };
@@ -185,7 +184,8 @@
 		A3587D8A2A5E826000DBD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3587D8D2A5E90B000DBD3E4 /* BaseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaseProject.entitlements; sourceTree = "<group>"; };
 		A386DBD32A552E320097496D /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
-		A3B8BB9F2A601AF30077D950 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "BaseProject/GoogleServicesSetup/Development/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A39D9CE62A611628003A00FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A39D9CEA2A611845003A00FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3BC72F42A496E4500053904 /* UserListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModal.swift; sourceTree = "<group>"; };
 		A3C9E6842A5D451500EBAAC1 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,8 +195,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495C821C2A31DEA200415440 /* Lottie in Frameworks */,
-				682CAD679F9E19C92B3771D4 /* Pods_BaseProject.framework in Frameworks */,
+				A39D9CDA2A610FEA003A00FD /* Pods_BaseProject.framework in Frameworks */,
+				A39D9CE32A611326003A00FD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 		4948F09C2A330C40006D2498 /* Production */ = {
 			isa = PBXGroup;
 			children = (
-				A3B8BB9F2A601AF30077D950 /* GoogleService-Info.plist */,
+				A39D9CEA2A611845003A00FD /* GoogleService-Info.plist */,
 			);
 			path = Production;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 		4948F09D2A330C47006D2498 /* Development */ = {
 			isa = PBXGroup;
 			children = (
-				4948F09E2A330C89006D2498 /* GoogleService-Info.plist */,
+				A39D9CE62A611628003A00FD /* GoogleService-Info.plist */,
 			);
 			path = Development;
 			sourceTree = "<group>";
@@ -730,7 +730,7 @@
 			);
 			name = BaseProject;
 			packageProductDependencies = (
-				495C821B2A31DEA200415440 /* Lottie */,
+				A39D9CE22A611326003A00FD /* Lottie */,
 			);
 			productName = BaseProject;
 			productReference = 49F0EE622A2F54D10091391C /* BaseProject.app */;
@@ -783,7 +783,7 @@
 				49A8DB232A30AC5F00D7E1D6 /* OpenSans-Semibold.ttf in Resources */,
 				49A8DB0D2A30A8CD00D7E1D6 /* AppColors.xcassets in Resources */,
 				49A8DB1E2A30AC5F00D7E1D6 /* OpenSans-ExtraBold.ttf in Resources */,
-				A3B8BBA02A601AF30077D950 /* GoogleService-Info.plist in Resources */,
+				A39D9CE72A611628003A00FD /* GoogleService-Info.plist in Resources */,
 				495C82242A31E3AD00415440 /* Localizable.strings in Resources */,
 				49A8DB042A30A80500D7E1D6 /* ActivityView.xib in Resources */,
 				A317882D2A5BF03500A39361 /* ErrorCode.plist in Resources */,
@@ -1210,7 +1210,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		495C821B2A31DEA200415440 /* Lottie */ = {
+		A39D9CE22A611326003A00FD /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 495C821A2A31DEA200415440 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
