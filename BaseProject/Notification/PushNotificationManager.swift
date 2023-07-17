@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseCore
+import FirebaseMessaging
 
 final class PushNotificationManager: NSObject, MessagingDelegate {
     static let shared = PushNotificationManager()
