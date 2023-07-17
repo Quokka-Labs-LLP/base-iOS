@@ -8,6 +8,8 @@
 import XCTest
 @testable import BaseProject
 final class BaseProjectTests: XCTestCase {
+
+    let userViewModel = UserListViewModel()
     var first = 10
     var second = 10
     var sum = 20
@@ -18,7 +20,31 @@ final class BaseProjectTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    func test_return_inValidEmail() throws {
+        let email = "gfvgjhgmail.com"
+        XCTAssertFalse(email.isValidEmail)
 
+    }
+    func test_return_inValidPhoneNumber() throws {
+        let phone = "87767"
+        XCTAssertTrue(phone.isValidPhoneNumber)
+
+    }
+    func test_return_validEmail() throws {
+        let email = "gfvgjh@gmail.com"
+        XCTAssert(email.isValidEmail)
+    }
+    func test_return_validPhoneNuber() throws {
+        let phone = "879876334"
+        XCTAssert(phone.isValidPhoneNumber)
+
+    }
+    func test_return_ValidResponse() {
+        userViewModel.getUserList()
+        XCTAssert(userViewModel.errorMeassage == nil)
+        XCTAssert(userViewModel.userData == nil)
+        XCTAssertFalse(userViewModel.userData != nil)
+    }
     func testExample() throws {
         XCTAssert(sum == 20)
         // This is an example of a functional test case.

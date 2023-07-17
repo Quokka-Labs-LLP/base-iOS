@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import CocoaDebug
+import CocoaDebug
 
 struct ProfileView: View {
     // MARK: - Properties

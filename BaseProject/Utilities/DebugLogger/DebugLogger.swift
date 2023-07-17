@@ -31,7 +31,7 @@ func debugLog(logType: LogType = .info, anyObject: Any? = nil, text: String = ""
             debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
             print(anyObject)
         } else {
-            if (logType == .selfNotAvailable || logType == .optionalUnwrapFail) {
+            if logType == .selfNotAvailable || logType == .optionalUnwrapFail {
                 debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : Falling through")
             } else {
                 debugPrint("\(logType.rawValue) [\((fileName as NSString).lastPathComponent), in \(function) at line: \(line), at \(timeForDebugLog())] : \(text)")
