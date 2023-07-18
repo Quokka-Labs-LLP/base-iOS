@@ -26,7 +26,7 @@ class AlertManager {
 //        }
     }
 
-    class func showDestrictiveAlert(title: String, message: String, destructiveButtonTitle: String, destructiveButtonAction: @escaping () -> ()) {
+    class func showDestrictiveAlert(title: String, message: String, destructiveButtonTitle: String, destructiveButtonAction: @escaping () -> Void) {
 //        if let rootViewController = AppDelegate.sharedDelegate().getRootViewController() {
 //            let destructiveAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 //

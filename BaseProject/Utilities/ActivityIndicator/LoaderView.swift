@@ -13,12 +13,16 @@ import SwiftUI
 struct ActivityIndicator: UIViewRepresentable {
   typealias UIView = UIActivityIndicatorView
 
-  var isAnimating: Bool
+  var isAnimating: Bool = false
   var configuration = { (_: UIView) in }
 
   func makeUIView(context: UIViewRepresentableContext<Self>) -> UIView { UIView() }
   func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<Self>) {
-    isAnimating ? uiView.startAnimating() : uiView.stopAnimating()
+      if isAnimating {
+          uiView.startAnimating()
+      } else {
+          uiView.stopAnimating()
+      }
     configuration(uiView)
   }
 }
@@ -38,7 +42,11 @@ struct ActivityIndicatorLoader: UIViewRepresentable {
   }
 
   func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-    isAnimating == true ? uiView.startAnimating() : uiView.stopAnimating()
+      if isAnimating == true {
+          uiView.startAnimating()
+      } else {
+          uiView.stopAnimating()
+      }
   }
 }
 

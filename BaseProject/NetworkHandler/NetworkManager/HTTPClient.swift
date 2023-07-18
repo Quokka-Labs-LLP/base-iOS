@@ -18,5 +18,6 @@ protocol HTTPClient {
 }
 
 protocol HTTPClientNormal {
+
     func fetch(_ request: HTTPRequest, basePath: String, success: @escaping NetworkSuccessHandler, failure: @escaping NetworkFailureHandler) -> HTTPClientNormal
 }

@@ -28,7 +28,7 @@ enum NetworkError: Error, LocalizedError {
         case .other(message: let message):
             return message
         case .statusCode(statusCode: let statusCode):
-            return "\(statusCode)"
+            return "\(NetworkManager.errorMessageBasedOnStatusCode(statusCode))"
         }
     }
 }

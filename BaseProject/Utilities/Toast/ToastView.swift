@@ -39,13 +39,13 @@ extension UIView {
   private class ToastCompletionWrapper {
     // MARK: Lifecycle
 
-    init(_ completion: ((Bool) -> ())?) {
+    init(_ completion: ((Bool) -> Void)?) {
       self.completion = completion
     }
 
     // MARK: Internal
 
-    let completion: ((Bool) -> ())?
+    let completion: ((Bool) -> Void)?
   }
 
   private enum ToastError: Error {
@@ -101,7 +101,7 @@ extension UIView {
     title: String? = nil,
     image: UIImage? = nil,
     style: ToastStyle = ToastManager.shared.style,
-    completion: ((_ didTap: Bool) -> ())? = nil
+    completion: ((_ didTap: Bool) -> Void)? = nil
   ) {
     do {
       let toast = try toastViewForMessage(message, title: title, image: image, style: style)
@@ -129,7 +129,7 @@ extension UIView {
     title: String?,
     image: UIImage?,
     style: ToastStyle = ToastManager.shared.style,
-    completion: ((_ didTap: Bool) -> ())?
+    completion: ((_ didTap: Bool) -> Void)?
   ) {
     do {
       let toast = try toastViewForMessage(message, title: title, image: image, style: style)
@@ -155,7 +155,7 @@ extension UIView {
     _ toast: UIView,
     duration: TimeInterval = ToastManager.shared.duration,
     position: ToastPosition = ToastManager.shared.position,
-    completion: ((_ didTap: Bool) -> ())? = nil
+    completion: ((_ didTap: Bool) -> Void)? = nil
   ) {
     toast.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7)
     let point = position.centerPoint(forToast: toast, inSuperview: self)
@@ -177,7 +177,7 @@ extension UIView {
     _ toast: UIView,
     duration: TimeInterval = ToastManager.shared.duration,
     point: CGPoint,
-    completion: ((_ didTap: Bool) -> ())? = nil
+    completion: ((_ didTap: Bool) -> Void)? = nil
   ) {
     objc_setAssociatedObject(
       toast,
@@ -186,7 +186,7 @@ extension UIView {
       .OBJC_ASSOCIATION_RETAIN_NONATOMIC
     )
 
-    if ToastManager.shared.isQueueEnabled, activeToasts != nil {
+    if ToastManager.shared.isQueueEnabled, activeToasts != [] {
       objc_setAssociatedObject(
         toast,
         &ToastKeys.duration,
@@ -318,8 +318,7 @@ extension UIView {
         options: [.curveEaseIn, .beginFromCurrentState],
         animations: {
           toast.alpha = 0.0
-        }
-      ) { _ in
+        }, completion: { _ in
         toast.removeFromSuperview()
         objc_setAssociatedObject(
           self,
@@ -327,7 +326,7 @@ extension UIView {
           nil,
           .OBJC_ASSOCIATION_RETAIN_NONATOMIC
         )
-      }
+      })
     }
   }
 
@@ -419,8 +418,8 @@ extension UIView {
       options: [.curveEaseOut, .allowUserInteraction],
       animations: {
         toast.alpha = 1.0
-      }
-    ) { _ in
+
+      }, completion: { _ in
         let timer = Timer(
         timeInterval: duration,
         target: self,
@@ -430,7 +429,7 @@ extension UIView {
       )
       RunLoop.main.add(timer, forMode: .common)
       objc_setAssociatedObject(toast, &ToastKeys.timer, timer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-    }
+    })
   }
 
   private func hideToast(_ toast: UIView, fromTap: Bool) {
@@ -444,7 +443,7 @@ extension UIView {
       options: [.curveEaseIn, .beginFromCurrentState],
       animations: {
         toast.alpha = 0.0
-      }) { _ in
+      }, completion: { _ in
       toast.removeFromSuperview()
       self.activeToasts.remove(toast)
 
@@ -463,7 +462,7 @@ extension UIView {
         self.queue.removeObject(at: 0)
         self.showToast(nextToast, duration: duration.doubleValue, point: point.cgPointValue)
       }
-    }
+    })
   }
 
   // MARK: - Events

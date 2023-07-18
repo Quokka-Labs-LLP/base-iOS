@@ -10,8 +10,9 @@ import Foundation
 class Localization {
     static func string(key: String) -> String {
         print( NSLocalizedString(key, tableName: "Localizable", bundle: Bundle(for: self), value: "", comment: ""))
-        return key.localized()
+        return key
     }
+
 }
 
 enum LocalizationConstant {
@@ -27,10 +28,16 @@ enum LocalizationConstant {
         static let facebookText = Localization.string(key: "facebook")
         static let instaText = Localization.string(key: "instagram")
         static let aboutUs = Localization.string(key: "about_us")
+        
     }
 
     // Screen-feature wise screens text.
     enum HomeScreen {
         static let navigationTitle = "homeview"
     }
+}
+enum LanguageOption: String {
+    case english = "en"
+    case arabic = "ar"
+    case base = "base"
 }

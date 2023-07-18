@@ -68,7 +68,6 @@ struct SheetPresentationForSwiftUI<Content>: UIViewRepresentable where Content: 
         // We need the delegate to use the presentationControllerDidDismiss function
         viewController.presentationController?.delegate = context.coordinator
 
-
         if isPresented {
             // Present the viewController
             uiView.window?.rootViewController?.present(viewController, animated: true)
