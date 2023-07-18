@@ -6,16 +6,16 @@
 
 */
 
-//MARK: Class Use to add all localizable values:
+// MARK: Class Use to add all localizable values:
 
-"facebook" = "Our Facebook";
+"helloJohn" = "أهلا جون";
 "instagram" = "Our Instagram";
 "about_us" = "About";
 "about" = "About";
 "accept" = "Accept";
 "account_settings" = "Account Settings";
 "close" = "Close";
-"john" = "John";
-"apiLogs" = "Api Logs";
-"users" = "Users";
-"helloJohn" = "Hello John";
+"facebook" = "فيسبوك";
+"users" = "المستخدمين";
+"john" = "جون";
+"apiLogs" = "سجلات Api";

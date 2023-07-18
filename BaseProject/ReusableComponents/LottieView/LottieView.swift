@@ -28,10 +28,10 @@ struct LottieView: UIViewRepresentable {
     func updateUIView(_ uiView: UIView, context: Context) {
     }
 
-    func playAnimation(){
+    func playAnimation() {
         animationView.play()
     }
-    func stopAnimation(){
+    func stopAnimation() {
         animationView.stop()
     }
 }

@@ -16,7 +16,6 @@ struct SheetPresentationForSwiftUI<Content>: UIViewRepresentable where Content: 
     let detents: [UISheetPresentationController.Detent]
     let content: Content
 
-
     init(
         _ isPresented: Binding<Bool>,
         onDismiss: (() -> Void)? = nil,
@@ -68,7 +67,6 @@ struct SheetPresentationForSwiftUI<Content>: UIViewRepresentable where Content: 
         // Set the coordinator (delegate)
         // We need the delegate to use the presentationControllerDidDismiss function
         viewController.presentationController?.delegate = context.coordinator
-
 
         if isPresented {
             // Present the viewController

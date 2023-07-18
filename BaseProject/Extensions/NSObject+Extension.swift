@@ -11,13 +11,12 @@ import UIKit
 extension NSObject {
 
     /// Returns a Class Name string to be able to use as reuse Identifier for Xib loading
-    class var reuseIdentifier : String {
+    class var reuseIdentifier: String {
         return String(describing: self)
     }
 
-
     /// Returns a Nib of Class to able to register XIBs for tableviews and collectionviews
-    class var cellNib : UINib {
+    class var cellNib: UINib {
         return UINib(nibName: self.reuseIdentifier, bundle: nil)
     }
 }

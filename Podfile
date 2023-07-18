@@ -6,7 +6,11 @@ target 'BaseProject' do
   use_frameworks!
 
   # Pods for BaseProject
-  pod 'NetworkEye'
   pod 'SwiftLint'
-  
+  pod 'FirebaseCrashlytics'
+  pod 'FirebaseDynamicLinks'
+  pod 'FirebaseCore'
+  pod 'Firebase'
+  pod 'FirebaseMessaging'
+  pod 'CocoaDebug'
 end
