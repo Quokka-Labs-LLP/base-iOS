@@ -22,4 +22,4 @@ xcuserdata/**/*
 
 # Pods
 Pods/
-.Podfile.lock
+Podfile.lock
