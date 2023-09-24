@@ -7,10 +7,9 @@
 
 import Foundation
 import UIKit
-//import FirebaseCore
-//import FirebaseCrashlytics
+import FirebaseCrashlytics
 import FirebaseMessaging
-import Firebase
+import FirebaseCore
 import UserNotifications
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {

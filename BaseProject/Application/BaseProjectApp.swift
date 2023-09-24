@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 import CocoaDebug
 @main
 struct BaseProjectApp: App {

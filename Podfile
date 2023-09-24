@@ -10,7 +10,41 @@ target 'BaseProject' do
   pod 'FirebaseCrashlytics'
   pod 'FirebaseDynamicLinks'
   pod 'FirebaseCore'
-  pod 'Firebase'
+#  pod 'Firebase'
   pod 'FirebaseMessaging'
   pod 'CocoaDebug'
 end
+target 'BaseProjectTests' do
+  inherit! :search_paths
+#  pod 'FirebaseCrashlytics'
+#  pod 'FirebaseDynamicLinks'
+#  pod 'FirebaseCore'
+#  pod 'Firebase'
+#  pod 'FirebaseMessaging'
+#  pod 'Firebase'
+end
+
+#def shared_pods
+#
+#  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+#
+#  pod 'SwiftLint'
+#  pod 'FirebaseCrashlytics'
+#  pod 'FirebaseDynamicLinks'
+#  pod 'FirebaseCore'
+#  pod 'Firebase'
+#  pod 'FirebaseMessaging'
+#  pod 'CocoaDebug'
+#
+#end
+#
+#target 'BaseProject' do
+#  shared_pods
+#end
+#
+#  target 'BaseProjectTests' do
+#    inherit! :search_paths
+#    pod 'Firebase'
+#
+#end

@@ -4,6 +4,12 @@
 <dict>
 	<key>aps-environment</key>
 	<string>development</string>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string></string>
+	</array>
+	<key>com.apple.developer.ubiquity-container-identifiers</key>
+	<string></string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:basestructapp.page</string>

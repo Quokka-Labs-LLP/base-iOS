@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-//import CocoaDebug
+import CocoaDebug
 
 class UserListViewModel: ObservableObject {
 
